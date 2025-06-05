@@ -1,0 +1,50 @@
+.large-button {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    background-color: var(--button-bg, #2a2a2a);
+    border: 2px solid #404040;
+    color: var(--button-text, #e0e0e0);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.large-button:hover {
+    background-color: var(--button-hover, #333333);
+    border-color: var(--button-active, #646cff);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.large-button.active {
+    background-color: var(--button-active, #646cff);
+    color: var(--button-active-text, #ffffff);
+    border-color: var(--button-active, #646cff);
+    box-shadow: 0 0 12px rgba(100, 108, 255, 0.4);
+}
+
+.large-button:active {
+    transform: translateY(1px);
+}
+
+/* Add a subtle glow effect on hover */
+.large-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(100, 108, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.large-button:hover::after {
+    opacity: 1;
+}

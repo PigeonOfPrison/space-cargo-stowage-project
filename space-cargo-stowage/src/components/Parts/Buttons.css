@@ -1,0 +1,32 @@
+.base-button {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.base-button:hover {
+    transform: translateY(-2px);
+}
+
+.base-button:active {
+    transform: translateY(1px);
+}
+
+/* Animation for press effect */
+.base-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}

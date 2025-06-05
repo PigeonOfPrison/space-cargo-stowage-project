@@ -1,0 +1,167 @@
+.items {
+    padding: 20px;
+    height: 100%;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1.2fr; /* Same proportion as containers */
+    gap: 20px;
+    height: 100%;
+}
+
+.grid-box {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* File Upload Section */
+.file-upload {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    padding: 12px 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px dashed #ccc;
+    transition: all 0.2s ease;
+}
+
+.file-label:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+.selected-file {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Item Stats Section */
+.item-stats {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Bottom Section */
+.bottom-section {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+/* Upload button styling */
+.upload-button {
+    background-color: var(--primary-color, #646cff);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.upload-button:hover {
+    background-color: var(--primary-hover, #535bf2);
+    transform: translateY(-2px);
+}
+
+/* Items List Styles */
+/* Items List Container */
+.items-list-container {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    background: #171923; /* Dark background for list container */
+    overflow: hidden;
+}
+
+/* Individual Item Row */
+.items-list-container .item-row {
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+    background: #1A202C; /* Dark theme for items */
+}
+
+.items-list-container .item-row:hover {
+    background: #2D3748; /* Lighter shade on hover */
+    transform: translateX(4px);
+}
+
+.inventory-item-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    height: 100%; /* Full height of the row */
+    padding: 4px 0; /* Adjust vertical padding */
+}
+
+/* Item Text Styles */
+.items-list-container .item-name {
+    color: #E2E8F0; /* Bright text for name */
+    font-weight: 500;
+}
+
+.items-list-container .inventory-item-info .item-quantity,
+.items-list-container .inventory-item-info .item-expiry {
+    color: #A0AEC0; /* Slightly muted but readable */
+}
+
+.item-expiry {
+    text-align: right;
+}
+
+/* Expiry Status Indicators */
+.expiring-soon {
+    border-left: 4px solid #ef5350;
+}
+
+.expiring-medium {
+    border-left: 4px solid #ffa726;
+}
+
+.expiring-safe {
+    border-left: 4px solid #66bb6a;
+}
+
+/* Stats Cards in Items Component */
+.stat-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+}

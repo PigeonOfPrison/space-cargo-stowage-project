@@ -1,0 +1,6 @@
+item_id,name,width,depth,height,priority,expiry_date,usage_limit,preferred_zone
+ITM001,Emergency Food Pack,10.5,8.2,5.0,1,2026-12-31,50,A
+ITM002,Water Filtration Unit,15.0,12.0,8.5,2,2027-06-15,25,B
+ITM003,Medical Supplies Kit,8.0,6.5,4.2,1,2025-11-30,100,A
+ITM004,Solar Battery Pack,12.3,9.8,6.7,3,2028-03-20,75,C
+ITM005,Emergency Oxygen Tank,7.5,7.5,20.0,1,2029-01-10,30,A
