@@ -2,11 +2,12 @@
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
-import { itemsPlacement, searchItems, retrieveItems, manualItemPlacement } from './src/controllers/itemsController.js';
+import { itemsPlacement, searchItems, retrieveItems, manualItemPlacement, getSomeItems } from './src/controllers/itemsController.js';
+import { getAllContainers } from './src/controllers/containersController.js';
 import { identifyWaste, wasteReturnPlan, wasteCompleteUndocking } from './src/controllers/wasteController.js';
 import { simulateDay } from './src/controllers/simulationController.js';
 import { importItems, importContainers, exportArrangements } from './src/controllers/importExportController.js';
-import { getSystemLogs } from './src/controllers/systemlogsController.js';
+import { getSystemLogs, getSomeLogs } from './src/controllers/systemlogsController.js';
 import { initDatabase } from './src/config/db.config.js';
 
 
@@ -28,6 +29,9 @@ app.get('/api/search', searchItems);
 app.post('/api/retrieve', retrieveItems);
 app.post('/api/place', manualItemPlacement);
 
+app.get('/api/container/get-all', getAllContainers);
+app.get('/api/item/get-some', getSomeItems)
+
 app.get('/api/waste/identify', identifyWaste);
 app.post('/api/waste/return-plan', wasteReturnPlan);
 app.post('/api/waste/complete-undocking', wasteCompleteUndocking);
@@ -40,6 +44,7 @@ app.post('/api/import/containers', importContainers);
 app.get('/api/export/arrangements', exportArrangements);
 
 app.get('/api/logs', getSystemLogs);
+app.get('/api/logs/some-logs', getSomeLogs);
 
 
 app.listen(PORT, () => {

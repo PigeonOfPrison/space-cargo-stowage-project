@@ -9,7 +9,11 @@ import Wastage from "./components/Wastage/Wastage";
 import Simulation from "./components/Simulation/Simulation";
 import Systemlogs from "./components/Systemlogs/Systemlogs";
 import ThreeDview from "./components/3DView/ThreeDview";
-import "./App.css";
+import { ToastProvider } from "./components/Toast/Toast";
+// New Design System Foundation - Import order is important!
+import "./styles/styles1.css";        // Foundation: Variables, utilities, base styles
+import "./styles/components1.css";    // Shared component patterns
+//import "./App.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("dashboard");
@@ -38,15 +42,17 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <Header />
-      <div className="main-container">
-        <Sidebar onPageChange={setCurrentPage} />
-        <main className="content">
-          {renderPage()}
-        </main>
+    <ToastProvider>
+      <div className="app">
+        <Header />
+        <div className="main-container">
+          <Sidebar onPageChange={setCurrentPage} currentPage={currentPage} />
+          <main className="content">
+            {renderPage()}
+          </main>
+        </div>
       </div>
-    </div>
+    </ToastProvider>
   );
 }
 

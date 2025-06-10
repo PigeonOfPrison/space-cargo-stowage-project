@@ -74,4 +74,20 @@ export async function getSystemLogs(req, res) {
     }
 }
 
+export async function getSomeLogs(req, res) {
+    try {
+        const logs = await SystemlogsModel.getSomeLogs();
+        return res.status(200).json({
+            logs: logs
+        });
+    } catch (error) {
+        console.error('Error retrieving some system logs:', error);
+        return res.status(500).json({
+            success: false,
+            message: 'Failed to retrieve some system logs',
+            error: error.message
+        });
+    }
+}
+
 export default { getSystemLogs };

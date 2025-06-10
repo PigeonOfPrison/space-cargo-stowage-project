@@ -89,6 +89,32 @@ class SystemlogsModel {    /**
             client.release();
         }
     }
+
+    static async getSomeLogs(limit = 50) {
+        const client = await pool.connect();
+        
+        try {
+            const query = `
+                SELECT 
+                    log_id,
+                    message,
+                    item_id,
+                    user_id,
+                    from_container_id,
+                    to_container_id,
+                    actionType,
+                    created_at
+                FROM systemlogs
+                ORDER BY created_at DESC
+                LIMIT $1
+            `;
+            const result = await client.query(query, [limit]);
+            return result.rows;
+        } 
+        finally {
+            client.release();
+        }
+    }
 }
 
 export default SystemlogsModel;

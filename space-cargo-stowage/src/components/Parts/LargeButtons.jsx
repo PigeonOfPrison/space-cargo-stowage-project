@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './largebuttons.css';
+import '../../styles/parts1.css';  // New Design System (was "./largebuttons.css")
 
 function LargeButtons({ text, onClick, isActive, icon }) {
     return (
         <button 
-            className={`large-button ${isActive ? 'active' : ''}`} 
+            className={`btn btn-large ${isActive ? 'is-active' : ''}`} 
             onClick={onClick}
         >
             {icon && <span className="button-icon"> {icon}  </span>}

@@ -52,6 +52,7 @@ const initDatabase = async () => {
                 width NUMERIC NOT NULL,
                 depth NUMERIC NOT NULL,
                 height NUMERIC NOT NULL,
+                remaining_volume NUMERIC NOT NULL DEFAULT width * depth * height,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );
 
@@ -64,8 +65,9 @@ const initDatabase = async () => {
                 priority INTEGER NOT NULL,
                 expiry_date TIMESTAMP NOT NULL,
                 usage_limit INTEGER NOT NULL,
-                preferred_zone VARCHAR(10),
+                preferred_zone VARCHAR(20),
                 container_id VARCHAR(50),
+                final_priority INTEGER NOT NULL DEFAULT priority,
                 FOREIGN KEY (container_id) REFERENCES containers(container_id),
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );            

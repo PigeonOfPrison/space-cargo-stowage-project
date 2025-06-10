@@ -68,38 +68,45 @@ class ItemsModel {
 
             await Promise.all(updatePromises);
             await client.query('COMMIT');
-        } catch (error) {
+        } 
+        catch (error) {
             await client.query('ROLLBACK');
             throw error;
-        } finally {
+        } 
+        finally {
             client.release();
-        }
+        }    
     }
 
-    static async searchItems(query) {
+    static async searchItems(query, limitToOne = true) {
         const client = await pool.connect();
 
         try {
             const { itemId, itemName, userId } = query;
             let sqlQuery = 'SELECT * FROM items WHERE 1=1';
             const values = [];
+            let paramIndex = 1;
 
             if (itemId) {
-                sqlQuery += ' AND item_id = $1';
+                sqlQuery += ` AND item_id = $${paramIndex}`;
                 values.push(itemId);
+                paramIndex++;
             }
             if (itemName) {
-                sqlQuery += ' AND name ILIKE $2';
+                sqlQuery += ` AND name ILIKE $${paramIndex}`;
                 values.push(`%${itemName}%`);
+                paramIndex++;
             }
+            
             sqlQuery += ` 
             ORDER BY 
                 usage_limit ASC,  -- Least number of uses first
                 expiry_date ASC   -- Closest expiry date first
-            LIMIT 1               -- Get only one item
             `;
-            
 
+            if (limitToOne) {
+                sqlQuery += ' LIMIT 1';
+            }
 
             // Log the search query if userId is provided
             if (userId) {
@@ -114,7 +121,24 @@ class ItemsModel {
 
             const result = await client.query(sqlQuery, values);
             return result.rows;
-        } finally {
+        } 
+        finally {
+            client.release();
+        }
+    }
+
+    static async getItemsByNumber(itemNumbers) {
+        const client = await pool.connect();
+        try {
+            const query = `
+                SELECT * FROM items 
+                ORDER BY item_id 
+                LIMIT $1
+            `;
+            const result = await client.query(query, [itemNumbers]);
+            return result.rows;
+        } 
+        finally {
             client.release();
         }
     }

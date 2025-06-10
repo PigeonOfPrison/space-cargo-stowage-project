@@ -1,0 +1,272 @@
+/* =============================================================================
+   HEADER COMPONENT STYLES v1
+   Component-Specific Layer for Header
+   ============================================================================= */
+
+/* Import foundation and shared component layers */
+@import './styles1.css';
+@import './components1.css';
+
+/* =============================================================================
+   HEADER LAYOUT & POSITIONING
+   ============================================================================= */
+
+/* Header container - full width positioning */
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0; /* Full width instead of left: 280px */
+  right: 0;
+  height: 80px;
+  z-index: var(--z-sticky);  /* Override main-container flex behavior for header */
+  display: block !important;
+  flex: none !important;
+  
+  /* Match sidebar active button gradient background */
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  border-bottom: 2px solid var(--primary-dark);
+  box-shadow: var(--shadow-md);
+  
+  /* Override default main-container margins for fixed positioning */
+  margin: 0;
+  padding: 0;
+  
+  /* Smooth transitions and animations */
+  transition: all var(--transition-base);
+  animation: headerFadeIn 0.4s ease-out;
+}
+
+/* Header content wrapper */
+#main-header .section-container {
+  height: 100%;
+  width: 100%;
+  padding: 0 var(--space-6);
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between !important; /* Space between logo and datetime */
+}
+
+/* Navigation section - contains datetime */
+#header-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+/* =============================================================================
+   HEADER BRAND SECTION
+   ============================================================================= */
+
+/* Brand section in header */
+#header-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+#main-header .header-logo-container {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, white 0%, rgba(255, 255, 255, 0.9) 100%);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: var(--text-xl);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+#main-header .header-logo-container:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+#main-header .header-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+#main-header .header-title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  color: white;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#main-header .header-subtitle {
+  font-size: var(--text-sm);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: var(--font-medium);
+  margin: 0;
+}
+
+/* =============================================================================
+   DATETIME DISPLAY STYLING
+   ============================================================================= */
+
+/* DateTime container */
+#datetime-display {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-2);
+  padding: var(--space-4);
+    /* No background box - clean text display */
+  background: none;
+  border: none;
+}
+
+/* Date text styling */
+#main-header .date-text {
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  color: white;
+  line-height: var(--leading-tight);
+  margin: 0;
+  text-align: right;
+}
+
+/* Time text styling */
+#main-header .time-text {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: white;
+  line-height: var(--leading-tight);
+  margin: 0;
+  font-family: var(--font-mono); /* Monospace for consistent time display */
+  letter-spacing: 1px;
+}
+
+/* =============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================= */
+
+/* Tablet and small desktop screens */
+@media (max-width: 1024px) {
+  #main-header .section-container {
+    padding: 0 var(--space-4);
+  }
+    #main-header .header-title {
+    font-size: var(--text-base);
+  }
+  
+  #main-header .date-text {
+    font-size: var(--text-base);
+  }
+  
+  #main-header .time-text {
+    font-size: var(--text-xl);
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  #main-header {
+    height: 60px; /* Reduced height for mobile */
+  }
+  
+  #main-header .section-container {
+    padding: 0 var(--space-3);
+  }
+    #main-header .header-logo-container {
+    width: 36px;
+    height: 36px;
+    font-size: var(--text-lg);
+  }
+  
+  #main-header .header-title {
+    font-size: var(--text-sm);
+  }
+  
+  #main-header .header-subtitle {
+    display: none; /* Hide subtitle on mobile to save space */
+  }
+  
+  #main-header .date-text {
+    font-size: var(--text-sm);
+  }
+  
+  #main-header .time-text {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+  }
+  
+  #datetime-display {
+    gap: var(--space-2);
+  }
+}
+
+/* Very small mobile screens */
+@media (max-width: 480px) {
+  #main-header .section-container {
+    padding: 0 var(--space-2);
+    gap: var(--space-2);
+  }
+    #main-header .header-brand-text {
+    gap: 0;
+  }
+  
+  #main-header .header-title {
+    font-size: var(--text-xs);
+    line-height: 1.1;
+  }
+  
+  #main-header .date-text,
+  #main-header .time-text {
+    font-size: var(--text-sm);
+  }
+  
+  #main-header .time-text {
+    font-weight: var(--font-medium);
+  }
+}
+
+/* =============================================================================
+   ANIMATION & INTERACTION STATES
+   ============================================================================= */
+
+/* Smooth fade-in animation on load */
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =============================================================================
+   ACCESSIBILITY IMPROVEMENTS
+   ============================================================================= */
+
+/* Focus states for accessibility */
+#datetime-display:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  #main-header {
+    border-bottom-width: 2px;
+    border-bottom-color: var(--gray-800);
+  }
+    #main-header .date-text,
+  #main-header .time-text {
+    color: var(--gray-900);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  #main-header,
+  #datetime-display,  #main-header .time-text {
+    animation: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,301 @@
+item_id , name                  , width, depth, height, priority, expiry_date             , usage_limit, preferred_zone
+ITEM-001, Medical Kit           ,   3.5,   2.8,    1.2,        1, 2025-12-15T00:00:00.000Z,          50, A
+ITEM-002, Food Ration Pack      ,   2.1,   1.5,    0.8,        2, 2025-08-20T00:00:00.000Z,         100, B
+ITEM-003, Water Container       ,   4.0,   4.0,    6.5,        1, 2025-10-30T00:00:00.000Z,          25, A
+ITEM-004, Tool Set              ,   5.2,   3.1,    2.4,        3, 2026-06-10T00:00:00.000Z,          75, C
+ITEM-005, Emergency Oxygen Tank ,   2.8,   2.8,    8.0,        1, 2025-09-15T00:00:00.000Z,          20, A
+ITEM-006, Medical Kit           ,   3.2,   2.5,    1.1,        1, 2025-11-25T00:00:00.000Z,          45, A
+ITEM-007, Research Equipment    ,   6.5,   4.2,    3.8,        2, 2026-03-18T00:00:00.000Z,          30, B
+ITEM-008, Food Ration Pack      ,   2.0,   1.4,    0.9,        2, 2025-07-12T00:00:00.000Z,         120, B
+ITEM-009, Communication Device  ,   1.8,   1.2,    0.6,        2, 2026-01-08T00:00:00.000Z,          80, C
+ITEM-010, Spare Parts Kit       ,   4.5,   3.0,    2.2,        3, 2026-04-22T00:00:00.000Z,          60, C
+ITEM-011, Water Container       ,   3.8,   3.8,    6.2,        1, 2025-09-28T00:00:00.000Z,          30, A
+ITEM-012, Scientific Instruments,   7.2,   5.1,    4.5,        2, 2026-02-14T00:00:00.000Z,          40, B
+ITEM-013, Emergency Oxygen Tank ,   3.0,   3.0,    7.8,        1, 2025-08-05T00:00:00.000Z,          18, A
+ITEM-014, Clothing Pack         ,   2.5,   2.0,    1.5,        3, 2026-05-17T00:00:00.000Z,          90, C
+ITEM-015, Tool Set              ,   5.0,   2.9,    2.3,        3, 2026-07-03T00:00:00.000Z,          65, C
+ITEM-016, Medical Kit           ,   3.4,   2.7,    1.3,        1, 2025-10-12T00:00:00.000Z,          55, A
+ITEM-017, Battery Pack          ,   1.5,   1.0,    0.4,        2, 2026-01-20T00:00:00.000Z,         150, B
+ITEM-018, Food Ration Pack      ,   2.2,   1.6,    0.7,        2, 2025-06-30T00:00:00.000Z,         110, B
+ITEM-019, Research Equipment    ,   6.8,   4.5,    4.0,        2, 2026-04-05T00:00:00.000Z,          35, B
+ITEM-020, Maintenance Tools     ,   4.8,   3.5,    2.8,        3, 2026-08-11T00:00:00.000Z,          70, C
+ITEM-021, Water Container       ,   4.2,   4.2,    6.8,        1, 2025-11-07T00:00:00.000Z,          22, A
+ITEM-022, Communication Device  ,   1.9,   1.3,    0.7,        2, 2026-02-25T00:00:00.000Z,          85, C
+ITEM-023, Emergency Oxygen Tank ,   2.9,   2.9,    8.2,        1, 2025-07-18T00:00:00.000Z,          15, A
+ITEM-024, Spare Parts Kit       ,   4.3,   2.8,    2.0,        3, 2026-05-29T00:00:00.000Z,          55, C
+ITEM-025, Scientific Instruments,   7.5,   5.3,    4.8,        2, 2026-03-12T00:00:00.000Z,          45, B
+ITEM-026, Medical Kit           ,   3.1,   2.4,    1.0,        1, 2025-12-02T00:00:00.000Z,          40, A
+ITEM-027, Tool Set              ,   5.4,   3.3,    2.6,        3, 2026-06-15T00:00:00.000Z,          80, C
+ITEM-028, Food Ration Pack      ,   2.3,   1.7,    0.8,        2, 2025-08-08T00:00:00.000Z,          95, B
+ITEM-029, Battery Pack          ,   1.6,   1.1,    0.5,        2, 2026-01-30T00:00:00.000Z,         140, B
+ITEM-030, Clothing Pack         ,   2.7,   2.2,    1.6,        3, 2026-07-20T00:00:00.000Z,         100, C
+ITEM-031, Research Equipment    ,   6.3,   4.0,    3.6,        2, 2026-04-18T00:00:00.000Z,          28, B
+ITEM-032, Water Container       ,   3.9,   3.9,    6.4,        1, 2025-10-20T00:00:00.000Z,          28, A
+ITEM-033, Maintenance Tools     ,   4.6,   3.3,    2.6,        3, 2026-08-25T00:00:00.000Z,          75, C
+ITEM-034, Communication Device  ,   2.0,   1.4,    0.8,        2, 2026-03-05T00:00:00.000Z,          90, C
+ITEM-035, Emergency Oxygen Tank ,   3.1,   3.1,    7.9,        1, 2025-09-02T00:00:00.000Z,          20, A
+ITEM-036, Medical Kit           ,   3.3,   2.6,    1.2,        1, 2025-11-15T00:00:00.000Z,          48, A
+ITEM-037, Scientific Instruments,   7.0,   4.9,    4.3,        2, 2026-02-28T00:00:00.000Z,          38, B
+ITEM-038, Spare Parts Kit       ,   4.7,   3.2,    2.4,        3, 2026-06-08T00:00:00.000Z,          65, C
+ITEM-039, Food Ration Pack      ,   2.0,   1.3,    0.9,        2, 2025-07-25T00:00:00.000Z,         105, B
+ITEM-040, Tool Set              ,   5.1,   2.8,    2.1,        3, 2026-05-12T00:00:00.000Z,          70, C
+ITEM-041, Battery Pack          ,   1.4,   0.9,    0.3,        2, 2026-02-10T00:00:00.000Z,         160, B
+ITEM-042, Water Container       ,   4.1,   4.1,    6.6,        1, 2025-12-28T00:00:00.000Z,          25, A
+ITEM-043, Clothing Pack         ,   2.6,   2.1,    1.4,        3, 2026-08-05T00:00:00.000Z,          85, C
+ITEM-044, Research Equipment    ,   6.6,   4.3,    3.9,        2, 2026-03-22T00:00:00.000Z,          32, B
+ITEM-045, Communication Device  ,   1.7,   1.1,    0.6,        2, 2026-01-15T00:00:00.000Z,          75, C
+ITEM-046, Emergency Oxygen Tank ,   2.7,   2.7,    8.1,        1, 2025-08-12T00:00:00.000Z,          22, A
+ITEM-047, Medical Kit           ,   3.6,   2.9,    1.4,        1, 2025-10-05T00:00:00.000Z,          52, A
+ITEM-048, Maintenance Tools     ,   4.9,   3.6,    2.9,        3, 2026-07-08T00:00:00.000Z,          68, C
+ITEM-049, Food Ration Pack      ,   2.1,   1.5,    0.7,        2, 2025-06-18T00:00:00.000Z,         115, B
+ITEM-050, Scientific Instruments,   7.3,   5.0,    4.6,        2, 2026-04-12T00:00:00.000Z,          42, B
+ITEM-051, Tool Set              ,   5.3,   3.1,    2.5,        3, 2026-09-01T00:00:00.000Z,          72, C
+ITEM-052, Water Container       ,   3.7,   3.7,    6.0,        1, 2025-11-22T00:00:00.000Z,          26, A
+ITEM-053, Battery Pack          ,   1.5,   1.0,    0.4,        2, 2026-02-18T00:00:00.000Z,         145, B
+ITEM-054, Spare Parts Kit       ,   4.4,   2.9,    2.1,        3, 2026-06-25T00:00:00.000Z,          58, C
+ITEM-055, Communication Device  ,   1.8,   1.2,    0.7,        2, 2026-03-15T00:00:00.000Z,          82, C
+ITEM-056, Emergency Oxygen Tank ,   3.0,   3.0,    7.7,        1, 2025-09-20T00:00:00.000Z,          19, A
+ITEM-057, Clothing Pack         ,   2.4,   1.9,    1.3,        3, 2026-08-18T00:00:00.000Z,          95, C
+ITEM-058, Medical Kit           ,   3.2,   2.5,    1.1,        1, 2025-12-08T00:00:00.000Z,          46, A
+ITEM-059, Research Equipment    ,   6.4,   4.1,    3.7,        2, 2026-05-05T00:00:00.000Z,          33, B
+ITEM-060, Food Ration Pack      ,   2.2,   1.6,    0.8,        2, 2025-07-02T00:00:00.000Z,         108, B
+ITEM-061, Maintenance Tools     ,   4.7,   3.4,    2.7,        3, 2026-09-12T00:00:00.000Z,          73, C
+ITEM-062, Tool Set              ,   5.0,   2.7,    2.2,        3, 2026-07-28T00:00:00.000Z,          67, C
+ITEM-063, Water Container       ,   4.0,   4.0,    6.3,        1, 2025-10-15T00:00:00.000Z,          24, A
+ITEM-064, Scientific Instruments,   7.1,   4.8,    4.4,        2, 2026-01-25T00:00:00.000Z,          39, B
+ITEM-065, Battery Pack          ,   1.6,   1.1,    0.5,        2, 2026-03-08T00:00:00.000Z,         155, B
+ITEM-066, Communication Device  ,   1.9,   1.3,    0.8,        2, 2026-04-20T00:00:00.000Z,          78, C
+ITEM-067, Emergency Oxygen Tank ,   2.8,   2.8,    8.0,        1, 2025-06-28T00:00:00.000Z,          17, A
+ITEM-068, Spare Parts Kit       ,   4.5,   3.0,    2.3,        3, 2026-08-10T00:00:00.000Z,          62, C
+ITEM-069, Medical Kit           ,   3.4,   2.7,    1.2,        1, 2025-11-30T00:00:00.000Z,          49, A
+ITEM-070, Clothing Pack         ,   2.5,   2.0,    1.5,        3, 2026-06-12T00:00:00.000Z,          88, C
+ITEM-071, Food Ration Pack      ,   2.0,   1.4,    0.9,        2, 2025-08-15T00:00:00.000Z,         102, B
+ITEM-072, Research Equipment    ,   6.7,   4.4,    4.0,        2, 2026-02-08T00:00:00.000Z,          36, B
+ITEM-073, Tool Set              ,   5.2,   3.2,    2.4,        3, 2026-05-18T00:00:00.000Z,          74, C
+ITEM-074, Water Container       ,   3.8,   3.8,    6.1,        1, 2025-12-05T00:00:00.000Z,          27, A
+ITEM-075, Maintenance Tools     ,   4.8,   3.5,    2.8,        3, 2026-07-15T00:00:00.000Z,          71, C
+ITEM-076, Battery Pack          ,   1.4,   0.9,    0.4,        2, 2026-01-28T00:00:00.000Z,         148, B
+ITEM-077, Communication Device  ,   1.7,   1.1,    0.6,        2, 2026-04-05T00:00:00.000Z,          80, C
+ITEM-078, Emergency Oxygen Tank ,   3.1,   3.1,    7.8,        1, 2025-07-10T00:00:00.000Z,          21, A
+ITEM-079, Scientific Instruments,   7.4,   5.2,    4.7,        2, 2026-03-28T00:00:00.000Z,          41, B
+ITEM-080, Medical Kit           ,   3.1,   2.4,    1.0,        1, 2025-10-22T00:00:00.000Z,          44, A
+ITEM-081, Spare Parts Kit       ,   4.6,   3.1,    2.2,        3, 2026-09-05T00:00:00.000Z,          59, C
+ITEM-082, Food Ration Pack      ,   2.3,   1.7,    0.8,        2, 2025-06-25T00:00:00.000Z,         112, B
+ITEM-083, Clothing Pack         ,   2.7,   2.2,    1.6,        3, 2026-08-22T00:00:00.000Z,          92, C
+ITEM-084, Tool Set              ,   5.1,   2.9,    2.3,        3, 2026-06-30T00:00:00.000Z,          69, C
+ITEM-085, Water Container       ,   4.2,   4.2,    6.7,        1, 2025-11-18T00:00:00.000Z,          23, A
+ITEM-086, Research Equipment    ,   6.5,   4.2,    3.8,        2, 2026-01-12T00:00:00.000Z,          34, B
+ITEM-087, Battery Pack          ,   1.5,   1.0,    0.3,        2, 2026-02-22T00:00:00.000Z,         152, B
+ITEM-088, Communication Device  ,   1.8,   1.2,    0.7,        2, 2026-05-08T00:00:00.000Z,          77, C
+ITEM-089, Emergency Oxygen Tank ,   2.9,   2.9,    8.2,        1, 2025-08-28T00:00:00.000Z,          18, A
+ITEM-090, Maintenance Tools     ,   4.9,   3.6,    2.9,        3, 2026-07-22T00:00:00.000Z,          76, C
+ITEM-091, Medical Kit           ,   3.5,   2.8,    1.3,        1, 2025-12-18T00:00:00.000Z,          51, A
+ITEM-092, Scientific Instruments,   7.0,   4.9,    4.3,        2, 2026-04-15T00:00:00.000Z,          37, B
+ITEM-093, Food Ration Pack      ,   2.1,   1.5,    0.9,        2, 2025-07-08T00:00:00.000Z,         106, B
+ITEM-094, Spare Parts Kit       ,   4.3,   2.8,    2.0,        3, 2026-08-28T00:00:00.000Z,          56, C
+ITEM-095, Tool Set              ,   5.4,   3.3,    2.6,        3, 2026-05-25T00:00:00.000Z,          78, C
+ITEM-096, Water Container       ,   3.9,   3.9,    6.5,        1, 2025-10-08T00:00:00.000Z,          29, A
+ITEM-097, Clothing Pack         ,   2.6,   2.1,    1.4,        3, 2026-09-18T00:00:00.000Z,          89, C
+ITEM-098, Battery Pack          ,   1.6,   1.1,    0.5,        2, 2026-03-12T00:00:00.000Z,         143, B
+ITEM-099, Communication Device  ,   1.9,   1.3,    0.8,        2, 2026-06-05T00:00:00.000Z,          84, C
+ITEM-100, Emergency Oxygen Tank ,   3.0,   3.0,    7.9,        1, 2025-09-10T00:00:00.000Z,          16, A
+ITEM-101, Medical Kit           ,   3.3,   2.6,    1.2,        1, 2025-12-22T00:00:00.000Z,          47, A
+ITEM-102, Food Ration Pack      ,   2.2,   1.6,    0.8,        2, 2025-08-30T00:00:00.000Z,          98, B
+ITEM-103, Scientific Instruments,   7.3,   5.2,    4.6,        2, 2026-03-25T00:00:00.000Z,          43, B
+ITEM-104, Tool Set              ,   5.3,   3.2,    2.5,        3, 2026-07-12T00:00:00.000Z,          71, C
+ITEM-105, Water Container       ,   4.1,   4.1,    6.6,        1, 2025-11-28T00:00:00.000Z,          26, A
+ITEM-106, Maintenance Tools     ,   4.7,   3.4,    2.7,        3, 2026-09-08T00:00:00.000Z,          74, C
+ITEM-107, Emergency Oxygen Tank ,   2.8,   2.8,    8.1,        1, 2025-08-15T00:00:00.000Z,          19, A
+ITEM-108, Battery Pack          ,   1.5,   1.0,    0.4,        2, 2026-02-15T00:00:00.000Z,         158, B
+ITEM-109, Research Equipment    ,   6.6,   4.3,    3.9,        2, 2026-04-28T00:00:00.000Z,          31, B
+ITEM-110, Clothing Pack         ,   2.6,   2.1,    1.5,        3, 2026-08-20T00:00:00.000Z,          87, C
+ITEM-111, Communication Device  ,   1.8,   1.2,    0.7,        2, 2026-05-15T00:00:00.000Z,          79, C
+ITEM-112, Medical Kit           ,   3.4,   2.7,    1.3,        1, 2025-10-18T00:00:00.000Z,          53, A
+ITEM-113, Spare Parts Kit       ,   4.4,   2.9,    2.1,        3, 2026-06-30T00:00:00.000Z,          57, C
+ITEM-114, Food Ration Pack      ,   2.1,   1.5,    0.9,        2, 2025-07-05T00:00:00.000Z,         107, B
+ITEM-115, Scientific Instruments,   7.1,   5.0,    4.4,        2, 2026-02-20T00:00:00.000Z,          36, B
+ITEM-116, Water Container       ,   3.9,   3.9,    6.4,        1, 2025-12-10T00:00:00.000Z,          28, A
+ITEM-117, Tool Set              ,   5.2,   3.1,    2.4,        3, 2026-08-05T00:00:00.000Z,          76, C
+ITEM-118, Emergency Oxygen Tank ,   3.0,   3.0,    7.8,        1, 2025-09-25T00:00:00.000Z,          17, A
+ITEM-119, Battery Pack          ,   1.4,   0.9,    0.3,        2, 2026-03-18T00:00:00.000Z,         145, B
+ITEM-120, Research Equipment    ,   6.7,   4.4,    4.0,        2, 2026-05-08T00:00:00.000Z,          34, B
+ITEM-121, Maintenance Tools     ,   4.8,   3.5,    2.8,        3, 2026-07-25T00:00:00.000Z,          72, C
+ITEM-122, Medical Kit           ,   3.2,   2.5,    1.1,        1, 2025-11-20T00:00:00.000Z,          49, A
+ITEM-123, Communication Device  ,   1.9,   1.3,    0.8,        2, 2026-04-12T00:00:00.000Z,          82, C
+ITEM-124, Food Ration Pack      ,   2.3,   1.7,    0.8,        2, 2025-08-28T00:00:00.000Z,         104, B
+ITEM-125, Spare Parts Kit       ,   4.5,   3.0,    2.2,        3, 2026-09-15T00:00:00.000Z,          61, C
+ITEM-126, Scientific Instruments,   7.4,   5.3,    4.7,        2, 2026-03-30T00:00:00.000Z,          39, B
+ITEM-127, Water Container       ,   4.0,   4.0,    6.5,        1, 2025-10-22T00:00:00.000Z,          27, A
+ITEM-128, Tool Set              ,   5.1,   3.0,    2.3,        3, 2026-06-18T00:00:00.000Z,          73, C
+ITEM-129, Emergency Oxygen Tank ,   2.9,   2.9,    8.0,        1, 2025-07-30T00:00:00.000Z,          21, A
+ITEM-130, Battery Pack          ,   1.6,   1.1,    0.5,        2, 2026-02-28T00:00:00.000Z,         152, B
+ITEM-131, Research Equipment    ,   6.4,   4.1,    3.7,        2, 2026-04-15T00:00:00.000Z,          33, B
+ITEM-132, Clothing Pack         ,   2.7,   2.2,    1.6,        3, 2026-08-28T00:00:00.000Z,          91, C
+ITEM-133, Medical Kit           ,   3.5,   2.8,    1.4,        1, 2025-12-05T00:00:00.000Z,          51, A
+ITEM-134, Communication Device  ,   1.7,   1.1,    0.6,        2, 2026-05-20T00:00:00.000Z,          78, C
+ITEM-135, Food Ration Pack      ,   2.0,   1.4,    0.9,        2, 2025-06-15T00:00:00.000Z,         118, B
+ITEM-136, Spare Parts Kit       ,   4.6,   3.1,    2.3,        3, 2026-07-08T00:00:00.000Z,          63, C
+ITEM-137, Scientific Instruments,   7.2,   5.1,    4.5,        2, 2026-02-05T00:00:00.000Z,          41, B
+ITEM-138, Water Container       ,   3.8,   3.8,    6.3,        1, 2025-11-15T00:00:00.000Z,          24, A
+ITEM-139, Maintenance Tools     ,   4.9,   3.6,    2.9,        3, 2026-09-22T00:00:00.000Z,          75, C
+ITEM-140, Emergency Oxygen Tank ,   3.1,   3.1,    7.9,        1, 2025-08-22T00:00:00.000Z,          16, A
+ITEM-141, Battery Pack          ,   1.5,   1.0,    0.4,        2, 2026-03-25T00:00:00.000Z,         147, B
+ITEM-142, Research Equipment    ,   6.8,   4.5,    4.1,        2, 2026-05-30T00:00:00.000Z,          32, B
+ITEM-143, Medical Kit           ,   3.3,   2.6,    1.2,        1, 2025-10-28T00:00:00.000Z,          48, A
+ITEM-144, Tool Set              ,   5.3,   3.2,    2.5,        3, 2026-08-15T00:00:00.000Z,          77, C
+ITEM-145, Food Ration Pack      ,   2.2,   1.6,    0.8,        2, 2025-07-20T00:00:00.000Z,         109, B
+ITEM-146, Communication Device  ,   1.8,   1.2,    0.7,        2, 2026-04-28T00:00:00.000Z,          81, C
+ITEM-147, Spare Parts Kit       ,   4.4,   2.9,    2.1,        3, 2026-06-12T00:00:00.000Z,          59, C
+ITEM-148, Water Container       ,   4.1,   4.1,    6.6,        1, 2025-12-18T00:00:00.000Z,          25, A
+ITEM-149, Scientific Instruments,   7.0,   4.9,    4.3,        2, 2026-03-08T00:00:00.000Z,          38, B
+ITEM-150, Emergency Oxygen Tank ,   2.8,   2.8,    8.1,        1, 2025-09-05T00:00:00.000Z,          20, A
+ITEM-151, Medical Kit           ,   3.4,   2.7,    1.3,        1, 2025-11-30T00:00:00.000Z,          46, A
+ITEM-152, Battery Pack          ,   1.4,   0.9,    0.3,        2, 2026-02-10T00:00:00.000Z,         155, B
+ITEM-153, Research Equipment    ,   6.5,   4.2,    3.8,        2, 2026-04-22T00:00:00.000Z,          35, B
+ITEM-154, Clothing Pack         ,   2.6,   2.1,    1.5,        3, 2026-07-28T00:00:00.000Z,          93, C
+ITEM-155, Food Ration Pack      ,   2.1,   1.5,    0.9,        2, 2025-08-12T00:00:00.000Z,         112, B
+ITEM-156, Tool Set              ,   5.0,   2.9,    2.2,        3, 2026-09-08T00:00:00.000Z,          71, C
+ITEM-157, Water Container       ,   3.9,   3.9,    6.4,        1, 2025-10-15T00:00:00.000Z,          28, A
+ITEM-158, Communication Device  ,   1.9,   1.3,    0.8,        2, 2026-05-25T00:00:00.000Z,          83, C
+ITEM-159, Emergency Oxygen Tank ,   3.0,   3.0,    7.8,        1, 2025-07-25T00:00:00.000Z,          18, A
+ITEM-160, Spare Parts Kit       ,   4.5,   3.0,    2.2,        3, 2026-08-20T00:00:00.000Z,          64, C
+ITEM-161, Scientific Instruments,   7.3,   5.2,    4.6,        2, 2026-02-15T00:00:00.000Z,          40, B
+ITEM-162, Medical Kit           ,   3.2,   2.5,    1.1,        1, 2025-12-12T00:00:00.000Z,          52, A
+ITEM-163, Maintenance Tools     ,   4.8,   3.5,    2.8,        3, 2026-06-28T00:00:00.000Z,          73, C
+ITEM-164, Battery Pack          ,   1.6,   1.1,    0.5,        2, 2026-03-30T00:00:00.000Z,         142, B
+ITEM-165, Research Equipment    ,   6.6,   4.3,    3.9,        2, 2026-05-15T00:00:00.000Z,          36, B
+ITEM-166, Food Ration Pack      ,   2.3,   1.7,    0.8,        2, 2025-07-08T00:00:00.000Z,         108, B
+ITEM-167, Water Container       ,   4.0,   4.0,    6.5,        1, 2025-11-22T00:00:00.000Z,          26, A
+ITEM-168, Tool Set              ,   5.2,   3.1,    2.4,        3, 2026-08-30T00:00:00.000Z,          75, C
+ITEM-169, Emergency Oxygen Tank ,   2.9,   2.9,    8.0,        1, 2025-08-28T00:00:00.000Z,          19, A
+ITEM-170, Communication Device  ,   1.8,   1.2,    0.7,        2, 2026-04-15T00:00:00.000Z,          80, C
+ITEM-171, Medical Kit           ,   3.5,   2.8,    1.4,        1, 2025-10-25T00:00:00.000Z,          47, A
+ITEM-172, Spare Parts Kit       ,   4.6,   3.1,    2.3,        3, 2026-07-12T00:00:00.000Z,          62, C
+ITEM-173, Scientific Instruments,   7.1,   5.0,    4.4,        2, 2026-03-18T00:00:00.000Z,          42, B
+ITEM-174, Battery Pack          ,   1.5,   1.0,    0.4,        2, 2026-02-22T00:00:00.000Z,         151, B
+ITEM-175, Research Equipment    ,   6.7,   4.4,    4.0,        2, 2026-04-28T00:00:00.000Z,          34, B
+ITEM-176, Food Ration Pack      ,   2.0,   1.4,    0.9,        2, 2025-06-20T00:00:00.000Z,         115, B
+ITEM-177, Water Container       ,   3.8,   3.8,    6.3,        1, 2025-12-28T00:00:00.000Z,          27, A
+ITEM-178, Maintenance Tools     ,   4.9,   3.6,    2.9,        3, 2026-09-15T00:00:00.000Z,          74, C
+ITEM-179, Emergency Oxygen Tank ,   3.1,   3.1,    7.9,        1, 2025-07-15T00:00:00.000Z,          17, A
+ITEM-180, Medical Kit           ,   3.3,   2.6,    1.2,        1, 2025-11-08T00:00:00.000Z,          50, A
+ITEM-181, Tool Set              ,   5.1,   3.0,    2.3,        3, 2026-08-22T00:00:00.000Z,          76, C
+ITEM-182, Communication Device  ,   1.9,   1.3,    0.8,        2, 2026-05-30T00:00:00.000Z,          85, C
+ITEM-183, Scientific Instruments,   7.4,   5.3,    4.7,        2, 2026-02-28T00:00:00.000Z,          37, B
+ITEM-184, Battery Pack          ,   1.4,   0.9,    0.3,        2, 2026-03-12T00:00:00.000Z,         156, B
+ITEM-185, Research Equipment    ,   6.4,   4.1,    3.7,        2, 2026-04-18T00:00:00.000Z,          33, B
+ITEM-186, Food Ration Pack      ,   2.2,   1.6,    0.8,        2, 2025-08-05T00:00:00.000Z,         110, B
+ITEM-187, Water Container       ,   4.1,   4.1,    6.6,        1, 2025-10-12T00:00:00.000Z,          24, A
+ITEM-188, Spare Parts Kit       ,   4.4,   2.9,    2.1,        3, 2026-07-25T00:00:00.000Z,          60, C
+ITEM-189, Emergency Oxygen Tank ,   2.8,   2.8,    8.1,        1, 2025-09-18T00:00:00.000Z,          21, A
+ITEM-190, Medical Kit           ,   3.4,   2.7,    1.3,        1, 2025-12-15T00:00:00.000Z,          45, A
+ITEM-191, Maintenance Tools     ,   4.7,   3.4,    2.7,        3, 2026-06-20T00:00:00.000Z,          72, C
+ITEM-192, Scientific Instruments,   7.2,   5.1,    4.5,        2, 2026-03-25T00:00:00.000Z,          41, B
+ITEM-193, Battery Pack          ,   1.6,   1.1,    0.5,        2, 2026-02-15T00:00:00.000Z,         148, B
+ITEM-194, Research Equipment    ,   6.8,   4.5,    4.1,        2, 2026-05-08T00:00:00.000Z,          31, B
+ITEM-195, Tool Set              ,   5.3,   3.2,    2.5,        3, 2026-08-28T00:00:00.000Z,          78, C
+ITEM-196, Water Container       ,   3.9,   3.9,    6.4,        1, 2025-11-28T00:00:00.000Z,          25, A
+ITEM-197, Communication Device  ,   1.8,   1.2,    0.7,        2, 2026-04-22T00:00:00.000Z,          82, C
+ITEM-198, Food Ration Pack      ,   2.1,   1.5,    0.9,        2, 2025-07-18T00:00:00.000Z,         105, B
+ITEM-199, Emergency Oxygen Tank ,   3.0,   3.0,    7.8,        1, 2025-08-08T00:00:00.000Z,          18, A
+ITEM-200, Medical Kit           ,   3.2,   2.5,    1.1,        1, 2025-10-30T00:00:00.000Z,          49, A
+ITEM-201, Research Equipment    ,   6.6,   4.3,    3.9,        2, 2026-05-22T00:00:00.000Z,          32, B
+ITEM-202, Tool Set              ,   5.2,   3.1,    2.4,        3, 2026-07-15T00:00:00.000Z,          77, C
+ITEM-203, Water Container       ,   4.0,   4.0,    6.5,        1, 2025-11-10T00:00:00.000Z,          26, A
+ITEM-204, Battery Pack          ,   1.5,   1.0,    0.4,        2, 2026-02-28T00:00:00.000Z,         153, B
+ITEM-205, Communication Device  ,   1.8,   1.2,    0.7,        2, 2026-04-08T00:00:00.000Z,          81, C
+ITEM-206, Medical Kit           ,   3.3,   2.6,    1.2,        1, 2025-12-05T00:00:00.000Z,          48, A
+ITEM-207, Food Ration Pack      ,   2.2,   1.6,    0.8,        2, 2025-08-22T00:00:00.000Z,         106, B
+ITEM-208, Scientific Instruments,   7.1,   5.0,    4.4,        2, 2026-03-15T00:00:00.000Z,          39, B
+ITEM-209, Spare Parts Kit       ,   4.5,   3.0,    2.2,        3, 2026-06-20T00:00:00.000Z,          61, C
+ITEM-210, Emergency Oxygen Tank ,   2.9,   2.9,    8.0,        1, 2025-09-12T00:00:00.000Z,          19, A
+ITEM-211, Maintenance Tools     ,   4.8,   3.5,    2.8,        3, 2026-08-05T00:00:00.000Z,          74, C
+ITEM-212, Research Equipment    ,   6.7,   4.4,    4.0,        2, 2026-04-25T00:00:00.000Z,          33, B
+ITEM-213, Clothing Pack         ,   2.6,   2.1,    1.5,        3, 2026-07-18T00:00:00.000Z,          94, C
+ITEM-214, Medical Kit           ,   3.4,   2.7,    1.3,        1, 2025-11-15T00:00:00.000Z,          51, A
+ITEM-215, Water Container       ,   3.9,   3.9,    6.4,        1, 2025-10-28T00:00:00.000Z,          27, A
+ITEM-216, Tool Set              ,   5.3,   3.2,    2.5,        3, 2026-09-10T00:00:00.000Z,          76, C
+ITEM-217, Battery Pack          ,   1.4,   0.9,    0.3,        2, 2026-03-20T00:00:00.000Z,         157, B
+ITEM-218, Food Ration Pack      ,   2.1,   1.5,    0.9,        2, 2025-07-25T00:00:00.000Z,         108, B
+ITEM-219, Communication Device  ,   1.9,   1.3,    0.8,        2, 2026-05-12T00:00:00.000Z,          82, C
+ITEM-220, Scientific Instruments,   7.3,   5.2,    4.6,        2, 2026-02-08T00:00:00.000Z,          41, B
+ITEM-221, Emergency Oxygen Tank ,   3.0,   3.0,    7.8,        1, 2025-08-15T00:00:00.000Z,          20, A
+ITEM-222, Medical Kit           ,   3.2,   2.5,    1.1,        1, 2025-12-18T00:00:00.000Z,          47, A
+ITEM-223, Spare Parts Kit       ,   4.4,   2.9,    2.1,        3, 2026-07-08T00:00:00.000Z,          63, C
+ITEM-224, Research Equipment    ,   6.5,   4.2,    3.8,        2, 2026-04-15T00:00:00.000Z,          34, B
+ITEM-225, Water Container       ,   4.1,   4.1,    6.6,        1, 2025-11-05T00:00:00.000Z,          25, A
+ITEM-226, Maintenance Tools     ,   4.9,   3.6,    2.9,        3, 2026-08-28T00:00:00.000Z,          75, C
+ITEM-227, Battery Pack          ,   1.6,   1.1,    0.5,        2, 2026-02-15T00:00:00.000Z,         154, B
+ITEM-228, Food Ration Pack      ,   2.3,   1.7,    0.8,        2, 2025-06-28T00:00:00.000Z,         112, B
+ITEM-229, Medical Kit           ,   3.5,   2.8,    1.4,        1, 2025-10-22T00:00:00.000Z,          52, A
+ITEM-230, Tool Set              ,   5.1,   3.0,    2.3,        3, 2026-06-15T00:00:00.000Z,          78, C
+ITEM-231, Communication Device  ,   1.7,   1.1,    0.6,        2, 2026-04-28T00:00:00.000Z,          83, C
+ITEM-232, Scientific Instruments,   7.0,   4.9,    4.3,        2, 2026-03-22T00:00:00.000Z,          38, B
+ITEM-233, Emergency Oxygen Tank ,   2.8,   2.8,    8.1,        1, 2025-09-08T00:00:00.000Z,          17, A
+ITEM-234, Water Container       ,   3.8,   3.8,    6.3,        1, 2025-12-12T00:00:00.000Z,          28, A
+ITEM-235, Research Equipment    ,   6.8,   4.5,    4.1,        2, 2026-05-18T00:00:00.000Z,          35, B
+ITEM-236, Medical Kit           ,   3.3,   2.6,    1.2,        1, 2025-11-28T00:00:00.000Z,          46, A
+ITEM-237, Spare Parts Kit       ,   4.6,   3.1,    2.3,        3, 2026-07-22T00:00:00.000Z,          64, C
+ITEM-238, Food Ration Pack      ,   2.0,   1.4,    0.9,        2, 2025-08-18T00:00:00.000Z,         107, B
+ITEM-239, Battery Pack          ,   1.5,   1.0,    0.4,        2, 2026-03-08T00:00:00.000Z,         158, B
+ITEM-240, Maintenance Tools     ,   4.7,   3.4,    2.7,        3, 2026-09-05T00:00:00.000Z,          73, C
+ITEM-241, Water Container       ,   4.0,   4.0,    6.5,        1, 2025-10-15T00:00:00.000Z,          26, A
+ITEM-242, Medical Kit           ,   3.4,   2.7,    1.3,        1, 2025-12-28T00:00:00.000Z,          50, A
+ITEM-243, Tool Set              ,   5.2,   3.1,    2.4,        3, 2026-06-28T00:00:00.000Z,          77, C
+ITEM-244, Communication Device  ,   1.8,   1.2,    0.7,        2, 2026-04-12T00:00:00.000Z,          84, C
+ITEM-245, Scientific Instruments,   7.2,   5.1,    4.5,        2, 2026-02-22T00:00:00.000Z,          40, B
+ITEM-246, Emergency Oxygen Tank ,   3.1,   3.1,    7.9,        1, 2025-08-25T00:00:00.000Z,          21, A
+ITEM-247, Research Equipment    ,   6.6,   4.3,    3.9,        2, 2026-05-08T00:00:00.000Z,          36, B
+ITEM-248, Food Ration Pack      ,   2.2,   1.6,    0.8,        2, 2025-07-12T00:00:00.000Z,         111, B
+ITEM-249, Medical Kit           ,   3.2,   2.5,    1.1,        1, 2025-11-18T00:00:00.000Z,          48, A
+ITEM-250, Water Container       ,   3.9,   3.9,    6.4,        1, 2025-12-05T00:00:00.000Z,          27, A
+ITEM-251, Spare Parts Kit       ,   4.5,   3.0,    2.2,        3, 2026-08-15T00:00:00.000Z,          62, C
+ITEM-252, Battery Pack          ,   1.4,   0.9,    0.3,        2, 2026-02-28T00:00:00.000Z,         155, B
+ITEM-253, Maintenance Tools     ,   4.8,   3.5,    2.8,        3, 2026-07-05T00:00:00.000Z,          76, C
+ITEM-254, Medical Kit           ,   3.5,   2.8,    1.4,        1, 2025-10-08T00:00:00.000Z,          51, A
+ITEM-255, Tool Set              ,   5.3,   3.2,    2.5,        3, 2026-06-18T00:00:00.000Z,          75, C
+ITEM-256, Communication Device  ,   1.9,   1.3,    0.8,        2, 2026-04-22T00:00:00.000Z,          85, C
+ITEM-257, Scientific Instruments,   7.4,   5.3,    4.7,        2, 2026-03-12T00:00:00.000Z,          37, B
+ITEM-258, Research Equipment    ,   6.7,   4.4,    4.0,        2, 2026-05-25T00:00:00.000Z,          33, B
+ITEM-259, Emergency Oxygen Tank ,   2.9,   2.9,    8.0,        1, 2025-09-15T00:00:00.000Z,          18, A
+ITEM-260, Water Container       ,   4.1,   4.1,    6.6,        1, 2025-11-22T00:00:00.000Z,          24, A
+ITEM-261, Medical Kit           ,   3.3,   2.6,    1.2,        1, 2025-12-15T00:00:00.000Z,          47, A
+ITEM-262, Food Ration Pack      ,   2.1,   1.5,    0.9,        2, 2025-08-08T00:00:00.000Z,         109, B
+ITEM-263, Spare Parts Kit       ,   4.4,   2.9,    2.1,        3, 2026-07-28T00:00:00.000Z,          65, C
+ITEM-264, Battery Pack          ,   1.6,   1.1,    0.5,        2, 2026-03-18T00:00:00.000Z,         152, B
+ITEM-265, Tool Set              ,   5.1,   3.0,    2.3,        3, 2026-09-12T00:00:00.000Z,          79, C
+ITEM-266, Water Container       ,   3.8,   3.8,    6.3,        1, 2025-10-28T00:00:00.000Z,          28, A
+ITEM-267, Medical Kit           ,   3.4,   2.7,    1.3,        1, 2025-11-12T00:00:00.000Z,          49, A
+ITEM-268, Communication Device  ,   1.8,   1.2,    0.7,        2, 2026-05-15T00:00:00.000Z,          86, C
+ITEM-269, Scientific Instruments,   7.1,   5.0,    4.4,        2, 2026-02-18T00:00:00.000Z,          42, B
+ITEM-270, Research Equipment    ,   6.5,   4.2,    3.8,        2, 2026-04-08T00:00:00.000Z,          34, B
+ITEM-271, Emergency Oxygen Tank ,   3.0,   3.0,    7.8,        1, 2025-08-22T00:00:00.000Z,          19, A
+ITEM-272, Maintenance Tools     ,   4.9,   3.6,    2.9,        3, 2026-08-08T00:00:00.000Z,          74, C
+ITEM-273, Water Container       ,   4.0,   4.0,    6.5,        1, 2025-12-08T00:00:00.000Z,          25, A
+ITEM-274, Medical Kit           ,   3.2,   2.5,    1.1,        1, 2025-10-15T00:00:00.000Z,          50, A
+ITEM-275, Food Ration Pack      ,   2.3,   1.7,    0.8,        2, 2025-07-05T00:00:00.000Z,         113, B
+ITEM-276, Spare Parts Kit       ,   4.6,   3.1,    2.3,        3, 2026-06-22T00:00:00.000Z,          66, C
+ITEM-277, Battery Pack          ,   1.5,   1.0,    0.4,        2, 2026-02-12T00:00:00.000Z,         156, B
+ITEM-278, Tool Set              ,   5.2,   3.1,    2.4,        3, 2026-07-18T00:00:00.000Z,          76, C
+ITEM-279, Water Container       ,   3.9,   3.9,    6.4,        1, 2025-11-28T00:00:00.000Z,          27, A
+ITEM-280, Medical Kit           ,   3.5,   2.8,    1.4,        1, 2025-12-22T00:00:00.000Z,          48, A
+ITEM-281, Communication Device  ,   1.7,   1.1,    0.6,        2, 2026-04-28T00:00:00.000Z,          87, C
+ITEM-282, Scientific Instruments,   7.3,   5.2,    4.6,        2, 2026-03-08T00:00:00.000Z,          39, B
+ITEM-283, Research Equipment    ,   6.8,   4.5,    4.1,        2, 2026-05-12T00:00:00.000Z,          35, B
+ITEM-284, Emergency Oxygen Tank ,   2.8,   2.8,    8.1,        1, 2025-09-08T00:00:00.000Z,          20, A
+ITEM-285, Maintenance Tools     ,   4.7,   3.4,    2.7,        3, 2026-08-25T00:00:00.000Z,          75, C
+ITEM-286, Water Container       ,   4.1,   4.1,    6.6,        1, 2025-10-22T00:00:00.000Z,          26, A
+ITEM-287, Medical Kit           ,   3.3,   2.6,    1.2,        1, 2025-11-15T00:00:00.000Z,          51, A
+ITEM-288, Food Ration Pack      ,   2.0,   1.4,    0.9,        2, 2025-08-28T00:00:00.000Z,         110, B
+ITEM-289, Spare Parts Kit       ,   4.5,   3.0,    2.2,        3, 2026-07-08T00:00:00.000Z,          67, C
+ITEM-290, Battery Pack          ,   1.4,   0.9,    0.3,        2, 2026-03-22T00:00:00.000Z,         157, B
+ITEM-291, Tool Set              ,   5.3,   3.2,    2.5,        3, 2026-06-15T00:00:00.000Z,          77, C
+ITEM-292, Water Container       ,   3.8,   3.8,    6.3,        1, 2025-12-18T00:00:00.000Z,          28, A
+ITEM-293, Medical Kit           ,   3.4,   2.7,    1.3,        1, 2025-10-08T00:00:00.000Z,          49, A
+ITEM-294, Communication Device  ,   1.9,   1.3,    0.8,        2, 2026-05-18T00:00:00.000Z,          88, C
+ITEM-295, Scientific Instruments,   7.0,   4.9,    4.3,        2, 2026-02-25T00:00:00.000Z,          40, B
+ITEM-296, Research Equipment    ,   6.6,   4.3,    3.9,        2, 2026-04-15T00:00:00.000Z,          36, B
+ITEM-297, Emergency Oxygen Tank ,   3.1,   3.1,    7.9,        1, 2025-08-15T00:00:00.000Z,          21, A
+ITEM-298, Maintenance Tools     ,   4.8,   3.5,    2.8,        3, 2026-09-08T00:00:00.000Z,          76, C
+ITEM-299, Water Container       ,   4.0,   4.0,    6.5,        1, 2025-11-12T00:00:00.000Z,          25, A
+ITEM-300, Medical Kit           ,   3.2,   2.5,    1.1,        1, 2025-12-28T00:00:00.000Z,          50, A

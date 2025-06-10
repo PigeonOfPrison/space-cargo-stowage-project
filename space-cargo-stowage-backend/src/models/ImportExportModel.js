@@ -6,14 +6,21 @@ class ImportExportModel {
      * Parse and validate CSV data for items import
      * @param {Array} itemsData - Array of item objects from CSV
      * @returns {Object} - Returns parsed items and validation errors
-     */
-    static parseAndValidateItems(itemsData) {
+     */    static parseAndValidateItems(itemsData) {
         const validItems = [];
         const errors = [];
 
         for (let i = 0; i < itemsData.length; i++) {
             const rowNumber = i + 2; // +2 because row 1 is header, and arrays are 0-indexed
-            const item = itemsData[i];
+            const rawItem = itemsData[i];
+
+            // Clean up keys and values by trimming spaces
+            const item = {};
+            Object.keys(rawItem).forEach(key => {
+                const cleanKey = key.trim();
+                const cleanValue = typeof rawItem[key] === 'string' ? rawItem[key].trim() : rawItem[key];
+                item[cleanKey] = cleanValue;
+            });
 
             // Validate required fields
             const validationError = this.validateItemData(item);
@@ -87,14 +94,21 @@ class ImportExportModel {
      * Parse and validate CSV data for containers import
      * @param {Array} containersData - Array of container objects from CSV
      * @returns {Object} - Returns parsed containers and validation errors
-     */
-    static parseAndValidateContainers(containersData) {
+     */    static parseAndValidateContainers(containersData) {
         const validContainers = [];
         const errors = [];
 
         for (let i = 0; i < containersData.length; i++) {
             const rowNumber = i + 2; // +2 because row 1 is header, and arrays are 0-indexed
-            const container = containersData[i];
+            const rawContainer = containersData[i];
+
+            // Clean up keys and values by trimming spaces
+            const container = {};
+            Object.keys(rawContainer).forEach(key => {
+                const cleanKey = key.trim();
+                const cleanValue = typeof rawContainer[key] === 'string' ? rawContainer[key].trim() : rawContainer[key];
+                container[cleanKey] = cleanValue;
+            });
 
             // Validate required fields
             const validationError = this.validateContainerData(container);

@@ -1,0 +1,431 @@
+/* =============================================================================
+   TOAST NOTIFICATION SYSTEM - Space Cargo Stowage
+   Modern glassmorphism toast notifications with animations
+   ============================================================================= */
+
+/* =============================================================================
+   NOTIFICATION CONTAINER
+   ============================================================================= */
+
+.notification-container {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  z-index: var(--z-toast);
+  display: flex;
+  flex-direction: column-reverse; /* Stack from bottom up */
+  gap: var(--space-3);
+  max-width: 420px;
+  width: 100%;
+  pointer-events: none; /* Allow clicks through container */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .notification-container {
+    bottom: var(--space-4);
+    right: var(--space-4);
+    left: var(--space-4);
+    max-width: none;
+  }
+}
+
+/* =============================================================================
+   BASE NOTIFICATION ALERT
+   ============================================================================= */
+
+.notification-alert {
+  /* Layout */
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  min-height: 64px;
+  width: 100%;
+  pointer-events: auto; /* Re-enable clicks for toast */
+  
+  /* Light glassmorphism foundation */
+  background: rgba(248, 250, 252, 0.95); /* Light background with high opacity */
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+  
+  /* Typography */
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  
+  /* Transitions */
+  transition: all var(--transition-base);
+  
+  /* Entry animation */
+  animation: toastSlideIn var(--transition-base) ease-out;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.notification-alert:hover {
+  background: rgba(248, 250, 252, 0.98); /* Nearly opaque on hover */
+  box-shadow: var(--glass-shadow-hover);
+}
+
+/* =============================================================================
+   TOAST ANIMATIONS
+   ============================================================================= */
+
+@keyframes toastSlideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes toastSlideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+    max-height: 200px;
+    margin-top: var(--space-3);
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+    max-height: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Removing state animation */
+.notification-alert.is-removing {
+  animation: toastSlideOut 300ms ease-in forwards;
+}
+
+/* =============================================================================
+   NOTIFICATION VARIANTS
+   ============================================================================= */
+
+/* Success Variant */
+.notification-alert.variant-success {
+  border-left: 4px solid var(--success);
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.15) 0%,
+    rgba(248, 250, 252, 0.95) 25%
+  );
+}
+
+.notification-alert.variant-success .alert-icon {
+  color: var(--success);
+}
+
+.notification-alert.variant-success:hover {
+  border-left-color: var(--success-light);
+  box-shadow: 
+    var(--glass-shadow-hover),
+    0 0 0 1px rgba(16, 185, 129, 0.1);
+}
+
+/* Error Variant */
+.notification-alert.variant-error {
+  border-left: 4px solid var(--error);
+  background: linear-gradient(
+    135deg,
+    rgba(239, 68, 68, 0.15) 0%,
+    rgba(248, 250, 252, 0.95) 25%
+  );
+}
+
+.notification-alert.variant-error .alert-icon {
+  color: var(--error);
+}
+
+.notification-alert.variant-error:hover {
+  border-left-color: var(--error-light);
+  box-shadow: 
+    var(--glass-shadow-hover),
+    0 0 0 1px rgba(239, 68, 68, 0.1);
+}
+
+/* Warning Variant */
+.notification-alert.variant-warning {
+  border-left: 4px solid var(--warning);
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.15) 0%,
+    rgba(248, 250, 252, 0.95) 25%
+  );
+}
+
+.notification-alert.variant-warning .alert-icon {
+  color: var(--warning);
+}
+
+.notification-alert.variant-warning:hover {
+  border-left-color: var(--warning-light);
+  box-shadow: 
+    var(--glass-shadow-hover),
+    0 0 0 1px rgba(245, 158, 11, 0.1);
+}
+
+/* Info Variant */
+.notification-alert.variant-info {
+  border-left: 4px solid var(--info);
+  background: linear-gradient(
+    135deg,
+    rgba(6, 182, 212, 0.15) 0%,
+    rgba(248, 250, 252, 0.95) 25%
+  );
+}
+
+.notification-alert.variant-info .alert-icon {
+  color: var(--info);
+}
+
+.notification-alert.variant-info:hover {
+  border-left-color: var(--info-light);
+  box-shadow: 
+    var(--glass-shadow-hover),
+    0 0 0 1px rgba(6, 182, 212, 0.1);
+}
+
+/* =============================================================================
+   TOAST CONTENT ELEMENTS
+   ============================================================================= */
+
+/* Alert Icon */
+.alert-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px; /* Slight alignment adjustment */
+  font-size: 18px;
+  transition: all var(--transition-fast);
+}
+
+.notification-alert:hover .alert-icon {
+  transform: scale(1.1);
+}
+
+/* Alert Message */
+.alert-message {
+  flex: 1;
+  color: var(--gray-800); /* Dark text on light background */
+  font-weight: var(--font-medium);
+  word-wrap: break-word;
+  line-height: var(--leading-normal);
+  padding-right: var(--space-2);
+}
+
+/* Alert Close Button */
+.alert-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  margin-top: -2px; /* Slight alignment adjustment */
+  
+  /* Remove default button styles */
+  background: none;
+  border: none;
+  cursor: pointer;  /* Styling */
+  color: var(--gray-600); /* Medium gray for visibility on light background */
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  font-size: 14px;
+}
+
+.alert-close:hover {
+  color: var(--gray-800); /* Darker on hover */
+  background: rgba(100, 116, 139, 0.15); /* Light gray background */
+  transform: scale(1.1);
+}
+
+.alert-close:active {
+  transform: scale(0.95);
+}
+
+/* Focus styles for accessibility */
+.alert-close:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* =============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================= */
+
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+  .notification-container {
+    max-width: 360px;
+  }
+  
+  .notification-alert {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--text-xs);
+  }
+  
+  .alert-icon {
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+  }
+  
+  .alert-close {
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 480px) {
+  .notification-alert {
+    padding: var(--space-3);
+    gap: var(--space-2);
+    min-height: 56px;
+  }
+  
+  .alert-message {
+    font-size: var(--text-xs);
+    line-height: 1.4;
+  }
+}
+
+/* =============================================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================================================= */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .notification-alert {
+    border-width: 2px;
+    border-style: solid;
+  }
+  
+  .notification-alert.variant-success {
+    border-color: var(--success-dark);
+  }
+  
+  .notification-alert.variant-error {
+    border-color: var(--error-dark);
+  }
+  
+  .notification-alert.variant-warning {
+    border-color: var(--warning-dark);
+  }
+  
+  .notification-alert.variant-info {
+    border-color: var(--info-dark);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .notification-alert {
+    animation: none;
+    transition: opacity var(--transition-fast);
+  }
+  
+  .notification-alert.is-removing {
+    animation: none;
+    opacity: 0;
+  }
+  
+  .notification-alert:hover {
+    transform: none;
+  }
+  
+  .alert-icon,
+  .alert-close {
+    transition: none;
+  }
+  
+  .notification-alert:hover .alert-icon,
+  .alert-close:hover {
+    transform: none;
+  }
+}
+
+/* =============================================================================
+   UTILITY CLASSES
+   ============================================================================= */
+
+/* Toast positioning variants (if needed) */
+.notification-container.position-top-left {
+  top: var(--space-6);
+  bottom: auto;
+  left: var(--space-6);
+  right: auto;
+  flex-direction: column;
+}
+
+.notification-container.position-top-center {
+  top: var(--space-6);
+  bottom: auto;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  flex-direction: column;
+}
+
+.notification-container.position-top-right {
+  top: var(--space-6);
+  bottom: auto;
+  right: var(--space-6);
+  left: auto;
+  flex-direction: column;
+}
+
+.notification-container.position-bottom-right {
+  /* Default positioning - no changes needed, but keep rule for consistency */
+  bottom: var(--space-6);
+  right: var(--space-6);
+}
+
+.notification-container.position-bottom-left {
+  bottom: var(--space-6);
+  left: var(--space-6);
+  right: auto;
+}
+
+.notification-container.position-bottom-center {
+  bottom: var(--space-6);
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+}
+
+/* Toast size variants */
+.notification-alert.size-compact {
+  padding: var(--space-2) var(--space-3);
+  min-height: 48px;
+  font-size: var(--text-xs);
+}
+
+.notification-alert.size-large {
+  padding: var(--space-6) var(--space-8);
+  min-height: 80px;
+  font-size: var(--text-base);
+}
+
+/* =============================================================================
+   DARK MODE SUPPORT - REMOVED
+   Now using permanent dark background for better contrast
+   ============================================================================= */
+
+/* Dark mode media query removed to prevent text color conflicts */

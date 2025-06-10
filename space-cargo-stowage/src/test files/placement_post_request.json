@@ -1,0 +1,852 @@
+{
+  "items": [
+    {
+      "itemId": "ITEMS-001",
+      "name": "Medical Kit",
+      "width": 3.5,      
+      "depth": 2.8,
+      "height": 1.2,
+      "priority": 100,
+      "expiryDate": "2025-12-15T00:00:00.000Z",
+      "usageLimit": 50,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-005",
+      "name": "Emergency Oxygen Tank",
+      "width": 2.8,
+      "depth": 2.8,
+      "height": 8.0,
+      "priority": 100,
+      "expiryDate": "2025-09-15T00:00:00.000Z",
+      "usageLimit": 20,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-012",
+      "name": "Scientific Instruments",
+      "width": 7.2,
+      "depth": 5.1,
+      "height": 4.5,
+      "priority": 100,
+      "expiryDate": "2026-02-14T00:00:00.000Z",
+      "usageLimit": 40,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-017",
+      "name": "Battery Pack",
+      "width": 1.5,
+      "depth": 1.0,
+      "height": 0.4,
+      "priority": 32,
+      "expiryDate": "2026-01-20T00:00:00.000Z",
+      "usageLimit": 150,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-020",
+      "name": "Maintenance Tools",
+      "width": 4.8,
+      "depth": 3.5,
+      "height": 2.8,
+      "priority": 80,
+      "expiryDate": "2026-08-11T00:00:00.000Z",
+      "usageLimit": 70,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-028",
+      "name": "Food Ration Pack",
+      "width": 2.3,
+      "depth": 1.7,
+      "height": 0.8,
+      "priority": 69,
+      "expiryDate": "2025-08-08T00:00:00.000Z",
+      "usageLimit": 95,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-036",
+      "name": "Medical Kit",
+      "width": 3.3,
+      "depth": 2.6,
+      "height": 1.2,
+      "priority": 100,
+      "expiryDate": "2025-11-15T00:00:00.000Z",
+      "usageLimit": 48,
+      "preferredZone": "A"
+    },    {
+      "itemId": "ITEMS-042",
+      "name": "Water Container",
+      "width": 4.1,
+      "depth": 4.1,
+      "height": 6.6,
+      "priority": 79,
+      "expiryDate": "2025-12-28T00:00:00.000Z",
+      "usageLimit": 25,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-043",
+      "name": "Medical Kit",
+      "width": 3.4,
+      "depth": 2.7,
+      "height": 1.3,
+      "priority": 100,
+      "expiryDate": "2025-12-20T00:00:00.000Z",
+      "usageLimit": 52,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-044",
+      "name": "Food Ration Pack",
+      "width": 2.2,
+      "depth": 1.6,
+      "height": 0.9,
+      "priority": 72,
+      "expiryDate": "2025-08-25T00:00:00.000Z",
+      "usageLimit": 115,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-045",
+      "name": "Scientific Instruments",
+      "width": 7.3,
+      "depth": 5.2,
+      "height": 4.6,
+      "priority": 51,
+      "expiryDate": "2026-03-10T00:00:00.000Z",
+      "usageLimit": 38,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-046",
+      "name": "Emergency Oxygen Tank",
+      "width": 2.9,
+      "depth": 2.9,
+      "height": 8.1,
+      "priority": 95,
+      "expiryDate": "2025-09-20T00:00:00.000Z",
+      "usageLimit": 22,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-047",
+      "name": "Battery Pack",
+      "width": 1.6,
+      "depth": 1.1,
+      "height": 0.5,
+      "priority": 55,
+      "expiryDate": "2026-02-05T00:00:00.000Z",
+      "usageLimit": 145,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-048",
+      "name": "Maintenance Tools",
+      "width": 4.9,
+      "depth": 3.6,
+      "height": 2.9,
+      "priority": 20,
+      "expiryDate": "2026-07-15T00:00:00.000Z",
+      "usageLimit": 68,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-049",
+      "name": "Water Container",
+      "width": 4.2,
+      "depth": 4.2,
+      "height": 6.7,
+      "priority": 79,
+      "expiryDate": "2025-11-30T00:00:00.000Z",
+      "usageLimit": 27,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-050",
+      "name": "Research Equipment",
+      "width": 6.7,
+      "depth": 4.4,
+      "height": 4.0,
+      "priority": 75,
+      "expiryDate": "2026-04-18T00:00:00.000Z",
+      "usageLimit": 35,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-051",
+      "name": "Medical Kit",
+      "width": 3.2,
+      "depth": 2.5,
+      "height": 1.1,
+      "priority": 100,
+      "expiryDate": "2025-10-25T00:00:00.000Z",
+      "usageLimit": 49,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-052",
+      "name": "Communication Device",
+      "width": 1.8,
+      "depth": 1.2,
+      "height": 0.7,
+      "priority": 50,
+      "expiryDate": "2026-03-28T00:00:00.000Z",
+      "usageLimit": 82,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-053",
+      "name": "Food Ration Pack",
+      "width": 2.1,
+      "depth": 1.5,
+      "height": 0.8,
+      "priority": 69,
+      "expiryDate": "2025-09-08T00:00:00.000Z",
+      "usageLimit": 105,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-054",
+      "name": "Tool Set",
+      "width": 5.2,
+      "depth": 3.1,
+      "height": 2.4,
+      "priority": 35,
+      "expiryDate": "2026-06-22T00:00:00.000Z",
+      "usageLimit": 72,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-055",
+      "name": "Emergency Oxygen Tank",
+      "width": 3.0,
+      "depth": 3.0,
+      "height": 7.8,
+      "priority": 95,
+      "expiryDate": "2025-08-12T00:00:00.000Z",
+      "usageLimit": 19,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-056",
+      "name": "Scientific Instruments",
+      "width": 7.1,
+      "depth": 5.0,
+      "height": 4.4,
+      "priority": 70,
+      "expiryDate": "2026-02-28T00:00:00.000Z",
+      "usageLimit": 41,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-057",
+      "name": "Water Container",
+      "width": 3.9,
+      "depth": 3.9,
+      "height": 6.4,
+      "priority": 80,
+      "expiryDate": "2025-12-08T00:00:00.000Z",
+      "usageLimit": 26,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-058",
+      "name": "Medical Kit",
+      "width": 3.3,
+      "depth": 2.6,
+      "height": 1.2,
+      "priority": 100,
+      "expiryDate": "2025-11-05T00:00:00.000Z",
+      "usageLimit": 47,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-059",
+      "name": "Battery Pack",
+      "width": 1.5,
+      "depth": 1.0,
+      "height": 0.4,
+      "priority": 50,
+      "expiryDate": "2026-01-15T00:00:00.000Z",
+      "usageLimit": 148,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-060",
+      "name": "Research Equipment",
+      "width": 6.8,
+      "depth": 4.5,
+      "height": 4.1,
+      "priority": 65,
+      "expiryDate": "2026-05-08T00:00:00.000Z",
+      "usageLimit": 34,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-061",
+      "name": "Tool Set",
+      "width": 5.3,
+      "depth": 3.2,
+      "height": 2.5,
+      "priority": 42,
+      "expiryDate": "2026-08-18T00:00:00.000Z",
+      "usageLimit": 74,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-062",
+      "name": "Food Ration Pack",
+      "width": 2.3,
+      "depth": 1.7,
+      "height": 0.8,
+      "priority": 67,
+      "expiryDate": "2025-07-28T00:00:00.000Z",
+      "usageLimit": 108,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-063",
+      "name": "Medical Kit",
+      "width": 3.4,
+      "depth": 2.7,
+      "height": 1.3,
+      "priority": 100,
+      "expiryDate": "2025-10-12T00:00:00.000Z",
+      "usageLimit": 51,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-064",
+      "name": "Communication Device",
+      "width": 1.9,
+      "depth": 1.3,
+      "height": 0.8,
+      "priority": 54,
+      "expiryDate": "2026-04-05T00:00:00.000Z",
+      "usageLimit": 85,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-065",
+      "name": "Emergency Oxygen Tank",
+      "width": 2.8,
+      "depth": 2.8,
+      "height": 8.2,
+      "priority": 93,
+      "expiryDate": "2025-09-28T00:00:00.000Z",
+      "usageLimit": 21,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-066",
+      "name": "Scientific Instruments",
+      "width": 7.4,
+      "depth": 5.3,
+      "height": 4.7,
+      "priority": 63,
+      "expiryDate": "2026-03-15T00:00:00.000Z",
+      "usageLimit": 37,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-067",
+      "name": "Water Container",
+      "width": 4.0,
+      "depth": 4.0,
+      "height": 6.5,
+      "priority": 79,
+      "expiryDate": "2025-11-18T00:00:00.000Z",
+      "usageLimit": 28,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-068",
+      "name": "Maintenance Tools",
+      "width": 4.7,
+      "depth": 3.4,
+      "height": 2.7,
+      "priority": 12,
+      "expiryDate": "2026-07-08T00:00:00.000Z",
+      "usageLimit": 69,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-069",
+      "name": "Battery Pack",
+      "width": 1.4,
+      "depth": 0.9,
+      "height": 0.3,
+      "priority": 2,
+      "expiryDate": "2026-02-22T00:00:00.000Z",
+      "usageLimit": 152,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-070",
+      "name": "Medical Kit",
+      "width": 3.5,
+      "depth": 2.8,
+      "height": 1.4,
+      "priority": 100,
+      "expiryDate": "2025-12-30T00:00:00.000Z",
+      "usageLimit": 46,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-071",
+      "name": "Research Equipment",
+      "width": 6.6,
+      "depth": 4.3,
+      "height": 3.9,
+      "priority": 59,
+      "expiryDate": "2026-05-22T00:00:00.000Z",
+      "usageLimit": 33,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-072",
+      "name": "Food Ration Pack",
+      "width": 2.0,
+      "depth": 1.4,
+      "height": 0.9,
+      "priority": 65,
+      "expiryDate": "2025-08-15T00:00:00.000Z",
+      "usageLimit": 112,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-073",
+      "name": "Tool Set",
+      "width": 5.1,
+      "depth": 3.0,
+      "height": 2.3,
+      "priority": 5,
+      "expiryDate": "2026-06-28T00:00:00.000Z",
+      "usageLimit": 73,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-074",
+      "name": "Emergency Oxygen Tank",
+      "width": 3.1,
+      "depth": 3.1,
+      "height": 7.9,
+      "priority": 96,
+      "expiryDate": "2025-07-22T00:00:00.000Z",
+      "usageLimit": 18,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-075",
+      "name": "Communication Device",
+      "width": 1.7,
+      "depth": 1.1,
+      "height": 0.6,
+      "priority": 33,
+      "expiryDate": "2026-03-28T00:00:00.000Z",
+      "usageLimit": 86,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-076",
+      "name": "Medical Kit",
+      "width": 3.2,
+      "depth": 2.5,
+      "height": 1.1,
+      "priority": 98,
+      "expiryDate": "2025-11-25T00:00:00.000Z",
+      "usageLimit": 48,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-077",
+      "name": "Scientific Instruments",
+      "width": 7.0,
+      "depth": 4.9,
+      "height": 4.3,
+      "priority": 40,
+      "expiryDate": "2026-02-08T00:00:00.000Z",
+      "usageLimit": 42,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-078",
+      "name": "Water Container",
+      "width": 4.1,
+      "depth": 4.1,
+      "height": 6.6,
+      "priority": 77,
+      "expiryDate": "2025-10-08T00:00:00.000Z",
+      "usageLimit": 29,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-079",
+      "name": "Battery Pack",
+      "width": 1.6,
+      "depth": 1.1,
+      "height": 0.5,
+      "priority": 25,
+      "expiryDate": "2026-01-28T00:00:00.000Z",
+      "usageLimit": 146,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-080",
+      "name": "Maintenance Tools",
+      "width": 4.8,
+      "depth": 3.5,
+      "height": 2.8,
+      "priority": 20,
+      "expiryDate": "2026-08-05T00:00:00.000Z",
+      "usageLimit": 71,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-081",
+      "name": "Medical Kit",
+      "width": 3.3,
+      "depth": 2.6,
+      "height": 1.2,
+      "priority": 1,
+      "expiryDate": "2025-12-18T00:00:00.000Z",
+      "usageLimit": 50,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-082",
+      "name": "Food Ration Pack",
+      "width": 2.2,
+      "depth": 1.6,
+      "height": 0.8,
+      "priority": 2,
+      "expiryDate": "2025-09-15T00:00:00.000Z",
+      "usageLimit": 106,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-083",
+      "name": "Research Equipment",
+      "width": 6.9,
+      "depth": 4.6,
+      "height": 4.2,
+      "priority": 2,
+      "expiryDate": "2026-04-28T00:00:00.000Z",
+      "usageLimit": 36,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-084",
+      "name": "Tool Set",
+      "width": 5.2,
+      "depth": 3.1,
+      "height": 2.4,
+      "priority": 3,
+      "expiryDate": "2026-07-22T00:00:00.000Z",
+      "usageLimit": 75,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-085",
+      "name": "Emergency Oxygen Tank",
+      "width": 2.9,
+      "depth": 2.9,
+      "height": 8.1,
+      "priority": 1,
+      "expiryDate": "2025-08-28T00:00:00.000Z",
+      "usageLimit": 20,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-086",
+      "name": "Communication Device",
+      "width": 1.8,
+      "depth": 1.2,
+      "height": 0.7,
+      "priority": 2,
+      "expiryDate": "2026-03-05T00:00:00.000Z",
+      "usageLimit": 83,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-087",
+      "name": "Water Container",
+      "width": 3.8,
+      "depth": 3.8,
+      "height": 6.3,
+      "priority": 1,
+      "expiryDate": "2025-11-12T00:00:00.000Z",
+      "usageLimit": 27,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-088",
+      "name": "Scientific Instruments",
+      "width": 7.3,
+      "depth": 5.2,
+      "height": 4.6,
+      "priority": 2,
+      "expiryDate": "2026-02-18T00:00:00.000Z",
+      "usageLimit": 39,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-089",
+      "name": "Battery Pack",
+      "width": 1.5,
+      "depth": 1.0,
+      "height": 0.4,
+      "priority": 2,
+      "expiryDate": "2026-01-08T00:00:00.000Z",
+      "usageLimit": 153,
+      "preferredZone": "B"
+    },
+    {
+      "itemId": "ITEMS-090",
+      "name": "Medical Kit",
+      "width": 3.4,
+      "depth": 2.7,
+      "height": 1.3,
+      "priority": 1,
+      "expiryDate": "2025-10-22T00:00:00.000Z",
+      "usageLimit": 49,
+      "preferredZone": "A"
+    },
+    {
+      "itemId": "ITEMS-091",
+      "name": "Maintenance Tools",
+      "width": 4.9,
+      "depth": 3.6,
+      "height": 2.9,
+      "priority": 3,
+      "expiryDate": "2026-06-15T00:00:00.000Z",
+      "usageLimit": 70,
+      "preferredZone": "C"
+    },
+    {
+      "itemId": "ITEMS-092",
+      "name": "Research Equipment",
+      "width": 6.7,
+      "depth": 4.4,
+      "height": 4.0,
+      "priority": 2,
+      "expiryDate": "2026-05-15T00:00:00.000Z",
+      "usageLimit": 35,
+      "preferredZone": "B"
+    }
+  ],
+  "containers": [
+    {
+      "containerId": "CONTS-001",
+      "zone": "A",
+      "width": 10.5,
+      "depth": 8.2,
+      "height": 12.0
+    },
+    {
+      "containerId": "CONTS-002",
+      "zone": "A",
+      "width": 15.0,
+      "depth": 10.0,
+      "height": 14.5
+    },
+    {
+      "containerId": "CONTS-017",
+      "zone": "B",
+      "width": 14.2,
+      "depth": 11.5,
+      "height": 15.3
+    },
+    {
+      "containerId": "CONTS-024",
+      "zone": "C",
+      "width": 17.8,
+      "depth": 15.2,
+      "height": 19.3
+    },    {
+      "containerId": "CONTS-038",
+      "zone": "B",
+      "width": 19.8,
+      "depth": 17.2,
+      "height": 21.3
+    },
+    {
+      "containerId": "CONTS-039",
+      "zone": "A",
+      "width": 11.2,
+      "depth": 9.5,
+      "height": 13.8
+    },
+    {
+      "containerId": "CONTS-040",
+      "zone": "B",
+      "width": 16.5,
+      "depth": 13.8,
+      "height": 17.5
+    },
+    {
+      "containerId": "CONTS-041",
+      "zone": "C",
+      "width": 18.9,
+      "depth": 16.4,
+      "height": 20.2
+    },
+    {
+      "containerId": "CONTS-042",
+      "zone": "A",
+      "width": 12.8,
+      "depth": 10.2,
+      "height": 14.6
+    },
+    {
+      "containerId": "CONTS-043",
+      "zone": "B",
+      "width": 15.7,
+      "depth": 12.9,
+      "height": 16.8
+    },
+    {
+      "containerId": "CONTS-044",
+      "zone": "C",
+      "width": 20.5,
+      "depth": 18.0,
+      "height": 22.5
+    },
+    {
+      "containerId": "CONTS-045",
+      "zone": "A",
+      "width": 13.4,
+      "depth": 11.0,
+      "height": 15.2
+    },
+    {
+      "containerId": "CONTS-046",
+      "zone": "B",
+      "width": 17.2,
+      "depth": 14.5,
+      "height": 18.3
+    },
+    {
+      "containerId": "CONTS-047",
+      "zone": "C",
+      "width": 19.2,
+      "depth": 16.8,
+      "height": 20.8
+    },
+    {
+      "containerId": "CONTS-048",
+      "zone": "A",
+      "width": 11.8,
+      "depth": 9.8,
+      "height": 14.0
+    },
+    {
+      "containerId": "CONTS-049",
+      "zone": "B",
+      "width": 16.0,
+      "depth": 13.2,
+      "height": 17.0
+    },
+    {
+      "containerId": "CONTS-050",
+      "zone": "C",
+      "width": 21.0,
+      "depth": 18.5,
+      "height": 23.0
+    },
+    {
+      "containerId": "CONTS-051",
+      "zone": "A",
+      "width": 12.4,
+      "depth": 10.5,
+      "height": 14.8
+    },
+    {
+      "containerId": "CONTS-052",
+      "zone": "B",
+      "width": 15.3,
+      "depth": 12.6,
+      "height": 16.4
+    },
+    {
+      "containerId": "CONTS-053",
+      "zone": "C",
+      "width": 18.6,
+      "depth": 16.0,
+      "height": 19.8
+    },
+    {
+      "containerId": "CONTS-054",
+      "zone": "A",
+      "width": 13.0,
+      "depth": 10.8,
+      "height": 15.5
+    },
+    {
+      "containerId": "CONTS-055",
+      "zone": "B",
+      "width": 16.8,
+      "depth": 14.2,
+      "height": 18.0
+    },
+    {
+      "containerId": "CONTS-056",
+      "zone": "C",
+      "width": 19.5,
+      "depth": 17.0,
+      "height": 21.2
+    },
+    {
+      "containerId": "CONTS-057",
+      "zone": "A",
+      "width": 11.5,
+      "depth": 9.2,
+      "height": 13.5
+    },
+    {
+      "containerId": "CONTS-058",
+      "zone": "B",
+      "width": 15.9,
+      "depth": 13.5,
+      "height": 17.2
+    },
+    {
+      "containerId": "CONTS-059",
+      "zone": "C",
+      "width": 20.2,
+      "depth": 17.8,
+      "height": 22.0
+    },
+    {
+      "containerId": "CONTS-060",
+      "zone": "A",
+      "width": 12.0,
+      "depth": 10.0,
+      "height": 14.2
+    },
+    {
+      "containerId": "CONTS-061",
+      "zone": "B",
+      "width": 16.2,
+      "depth": 13.8,
+      "height": 17.8
+    },
+    {
+      "containerId": "CONTS-062",
+      "zone": "C",
+      "width": 18.3,
+      "depth": 15.8,
+      "height": 19.5
+    },
+    {
+      "containerId": "CONTS-063",
+      "zone": "A",
+      "width": 13.6,
+      "depth": 11.2,
+      "height": 15.8
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+/* =============================================================================
+   SYSTEM LOGS PAGE STYLES v1
+   Modern Glassmorphism Components for System Logs Management
+   ============================================================================= */
+
+/* Import the design system foundation */
+@import './styles1.css';
+@import './components1.css';
+
+/* =============================================================================
+   SYSTEM LOGS PAGE LAYOUT
+   ============================================================================= */
+
+/* Main System Logs Page Layout - Single Column */
+#systemlogs-page.grid-single {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 2fr;
+  gap: var(--space-6);
+  min-height: calc(100vh - 140px);
+  max-height: none !important;
+}
+
+/* =============================================================================
+   SYSTEM LOGS SECTION STYLES - Use shared section title styles from components1.css
+   ============================================================================= */
+
+/* =============================================================================
+   FILTERS AND SEARCH SECTION
+   ============================================================================= */
+
+/* Filters Container */
+#logs-filters {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop-sm);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+  box-shadow: var(--glass-shadow-sm);
+}
+
+#logs-filters .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+
+#logs-filters .form-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Input Groups with Icons */
+.search-group {
+  position: relative;
+  flex: 2;
+  min-width: 300px;
+}
+
+.input-group,
+.select-group,
+.date-input-group {
+  position: relative;
+  flex: 1;
+  min-width: 140px;
+}
+
+.input-icon {
+  position: absolute;
+  left: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--text-sm);
+  color: var(--gray-400);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.search-group .input-field,
+.input-group .input-field,
+.date-input-group .input-field {
+  padding-left: calc(var(--space-4) + var(--space-6)); /* Space for icon */
+}
+
+.select-group .select-field {
+  padding-left: calc(var(--space-4) + var(--space-6)); /* Space for icon */
+}
+
+/* Date Filters Container */
+.date-filters {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+/* =============================================================================
+   BUTTONS IN FILTERS
+   ============================================================================= */
+
+#logs-filters .btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  min-width: 100px;
+  justify-content: center;
+}
+
+#logs-filters .btn svg {
+  font-size: var(--text-sm);
+}
+
+/* =============================================================================
+   RESULTS SUMMARY
+   ============================================================================= */
+
+#logs-summary {
+  background: var(--primary-50);
+  border: 1px solid var(--primary-100);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+#logs-summary p {
+  margin: 0;
+  font-size: var(--text-base);
+  color: var(--gray-700);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.summary-icon {
+  font-size: var(--text-sm);
+  color: var(--primary);
+}
+
+#logs-summary span {
+  font-weight: var(--font-medium);
+  color: var(--primary-dark);
+}
+
+/* =============================================================================
+   DATA TABLE STYLES
+   ============================================================================= */
+
+#logs-table-container {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--glass-shadow);
+}
+
+#logs-table-container .data-table {
+  width: 100%;
+  border-collapse: collapse;
+  display: block;
+  overflow: auto;
+  max-height: calc(100vh - 300px);
+}
+
+/* Table Header */
+#logs-table-container .data-table-header {
+  display: grid;
+  grid-template-columns: 200px 160px 140px 140px 240px 160px;
+  gap: var(--space-2);
+  background: var(--primary-light);
+  color: var(--white);
+  padding: var(--space-4);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-sm);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#logs-table-container .data-table-header span {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+#logs-table-container .data-table-header svg {
+  font-size: var(--text-xs);
+  opacity: 0.8;
+}
+
+/* Table Body */
+#logs-table-container .data-table-body {
+  display: block;
+}
+
+/* Table Rows */
+#logs-table-container .data-row {
+  display: grid;
+  grid-template-columns: 200px 160px 140px 140px 240px 160px;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--gray-100);
+  transition: background-color var(--transition-base);
+  align-items: center;
+  min-height: 60px;
+}
+
+#logs-table-container .data-row:hover {
+  background-color: var(--primary-50);
+}
+
+#logs-table-container .data-row:last-child {
+  border-bottom: none;
+}
+
+/* =============================================================================
+   TABLE CELL STYLES
+   ============================================================================= */
+
+/* Timestamp */
+.log-timestamp {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+  font-family: var(--font-mono);
+  line-height: 1.4;
+}
+
+/* Action Badge */
+.log-action .status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: var(--font-medium);
+  color: var(--white);
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.log-action .status-badge svg {
+  font-size: var(--text-xs);
+}
+
+/* User ID */
+.log-user-id {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  font-weight: var(--font-medium);
+}
+
+/* Item ID */
+.log-item-id {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--primary-dark);
+  font-weight: var(--font-medium);
+}
+
+/* Movement Details */
+.log-movement {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+}
+
+.movement-details {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+}
+
+.movement-icon {
+  font-size: var(--text-xs);
+  color: var(--primary);
+}
+
+.disposal-icon {
+  color: var(--error) !important;
+}
+
+/* Reason */
+.log-reason {
+  font-size: var(--text-sm);
+  color: var(--gray-700);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2; /* Standard property for compatibility */
+  -webkit-box-orient: vertical;
+}
+
+/* =============================================================================
+   NO RESULTS STATE
+   ============================================================================= */
+
+.no-results {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-12) var(--space-6);
+  text-align: center;
+  color: var(--gray-500);
+  background: var(--gray-50);
+}
+
+.no-results p {
+  font-size: var(--text-lg);
+  margin: 0;
+  font-weight: var(--font-medium);
+}
+
+/* =============================================================================
+   LOADING STATES
+   ============================================================================= */
+
+#systemlogs-loading {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  margin: var(--space-6);
+  color: var(--gray-600);
+}
+
+#systemlogs-loading p {
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  margin: 0;
+}
+
+/* =============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================= */
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  #logs-filters .form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .search-group,
+  .input-group,
+  .select-group,
+  .date-input-group {
+    min-width: 100%;
+  }
+  
+  .date-filters {
+    flex-direction: column;
+  }  
+  #logs-table-container .data-table-header,
+  #logs-table-container .data-row {
+    grid-template-columns: 180px 140px 120px 120px 200px 140px;
+    font-size: var(--text-sm);
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  #systemlogs-page.grid-single {
+    padding: var(--space-4);
+    gap: var(--space-4);
+  }
+  
+  #logs-filters {
+    padding: var(--space-4);
+  }
+  
+  #logs-filters .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Mobile table - stack columns */
+  #logs-table-container .data-table-header {
+    display: none;
+  }
+  
+  #logs-table-container .data-row {
+    display: block;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-3);
+    padding: var(--space-4);
+    background: var(--white);
+  }
+  
+  #logs-table-container .data-row > span {
+    display: block;
+    margin-bottom: var(--space-2);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--gray-100);
+  }
+  
+  #logs-table-container .data-row > span:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  /* Add labels for mobile view */
+  #logs-table-container .data-row > span::before {
+    content: attr(data-label);
+    font-weight: var(--font-semibold);
+    color: var(--gray-700);
+    display: block;
+    margin-bottom: var(--space-1);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .log-timestamp::before { content: "Time: "; }
+  .log-action::before { content: "Action: "; }
+  .log-user-id::before { content: "User: "; }
+  .log-item-id::before { content: "Item: "; }
+  .log-movement::before { content: "Movement: "; }
+  .log-reason::before { content: "Reason: "; }
+}
+
+/* =============================================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================================================= */
+
+/* Focus States */
+#logs-filters .input-field:focus,
+#logs-filters .select-field:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  #logs-table-container .data-row {
+    border-bottom: 2px solid var(--gray-300);
+  }
+  
+  .log-action .status-badge {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  #logs-table-container .data-row {
+    transition: none;
+  }
+  
+  #logs-filters {
+    backdrop-filter: none;
+  }
+}
+
+/* =============================================================================
+   PRINT STYLES
+   ============================================================================= */
+
+@media print {
+  #systemlogs-page {
+    background: white;
+    box-shadow: none;
+  }
+  
+  #logs-filters {
+    display: none;
+  }
+    #logs-table-container {
+    box-shadow: none;
+    border: 1px solid var(--border-light);
+  }
+  
+  #logs-table-container .data-table-header {
+    background: #f0f0f0 !important;
+    color: #000 !important;
+  }
+  
+  #logs-table-container .data-row {
+    page-break-inside: avoid;
+  }
+}

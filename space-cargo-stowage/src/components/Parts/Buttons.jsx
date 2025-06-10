@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Buttons.css';
+import '../../styles/parts1.css';  // New Design System (was "./Buttons.css")
 
 function Button({ text, onClick, className }) {
     return (

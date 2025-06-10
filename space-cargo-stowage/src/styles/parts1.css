@@ -1,0 +1,599 @@
+/* =============================================================================
+   BUTTON COMPONENTS - PARTS v1
+   Modern Glassmorphism Button System for Space Cargo Stowage
+   ============================================================================= */
+
+/* Import the design system foundation */
+@import './styles1.css';
+
+/* =============================================================================
+   BASE BUTTON FOUNDATION
+   ============================================================================= */
+
+/* Base button class - used by both regular buttons and large buttons */
+.base-button,
+.btn {
+  /* Layout & Positioning */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  position: relative;
+  box-sizing: border-box;
+  
+  /* Typography */
+  font-family: var(--font-body);
+  font-weight: var(--font-medium);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  text-decoration: none;
+  white-space: nowrap;
+  
+  /* Sizing & Spacing */
+  padding: var(--space-3) var(--space-6);
+  min-height: 44px; /* Accessibility - minimum touch target */
+  border-radius: var(--radius-md);
+  
+  /* Borders */
+  border: 2px solid transparent;
+  outline: none;
+  
+  /* Colors - Default neutral button */
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop-sm);
+  color: var(--gray-700);
+  border-color: var(--glass-border);
+  
+  /* Shadows */
+  box-shadow: var(--shadow-sm);
+  
+  /* Interactions */
+  cursor: pointer;
+  transition: all var(--transition-base);
+  overflow: hidden;
+  
+  /* Prevent text selection */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+/* Button States */
+.base-button:hover,
+.btn:hover {
+  box-shadow: var(--shadow-md);
+  background: var(--glass-bg-hover);
+  border-color: var(--primary-100);
+}
+
+.base-button:active,
+.btn:active {
+  box-shadow: var(--shadow-sm);
+}
+
+.base-button:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.base-button:disabled,
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.base-button:disabled:hover,
+.btn:disabled:hover {
+  transform: none;
+  box-shadow: var(--shadow-sm);
+}
+
+/* =============================================================================
+   BUTTON VARIANTS
+   ============================================================================= */
+
+/* Primary Button - Main action buttons */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: var(--text-inverse);
+  border-color: var(--primary);
+  box-shadow: var(--glass-shadow);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+  border-color: var(--primary-light);
+  box-shadow: var(--glass-shadow-hover);
+}
+
+.btn-primary:active {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Secondary Button - Secondary actions */
+.btn-secondary {
+  background: var(--glass-bg);
+  color: var(--primary);
+  border-color: var(--primary-200);
+  backdrop-filter: var(--glass-backdrop);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-50);
+  border-color: var(--primary);
+  color: var(--primary-dark);
+}
+
+.btn-secondary:active {
+  background: var(--primary-100);
+  border-color: var(--primary-dark);
+}
+
+/* Upload Button - File upload actions */
+.btn-upload {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: var(--text-inverse);
+  border-color: var(--primary);
+  box-shadow: 0 8px 32px 0 rgba(15, 118, 110, 0.12);
+}
+
+.btn-upload:hover {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+  border-color: var(--primary-light);
+  box-shadow: 0 12px 40px 0 rgba(15, 118, 110, 0.18);
+}
+
+.btn-upload:active {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Danger/Warning Button - Destructive actions */
+.btn-danger {
+  background: linear-gradient(135deg, var(--error) 0%, var(--error-light) 100%);
+  color: var(--text-inverse);
+  border-color: var(--error);
+  box-shadow: 0 8px 32px 0 rgba(239, 68, 68, 0.12);
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, var(--error-light) 0%, var(--error) 100%);
+  border-color: var(--error-light);
+  box-shadow: 0 12px 40px 0 rgba(239, 68, 68, 0.18);
+}
+
+.btn-danger:active {
+  background: var(--error-dark);
+  border-color: var(--error-dark);
+}
+
+/* =============================================================================
+   BUTTON SIZES
+   ============================================================================= */
+
+/* Small Button */
+.btn-small,
+.size-small {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  min-height: 36px;
+  border-radius: var(--radius-base);
+}
+
+/* Large Button - Used by LargeButtons component */
+.btn-large {
+  padding: var(--space-5) var(--space-8);
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  min-height: 56px;
+  border-radius: var(--radius-lg);
+  width: 100%; /* Full width for large buttons */
+  text-align: left; /* Left align text for navigation-style buttons */
+  justify-content: flex-start; /* Align content to the left */
+}
+
+/* Extra Large Button */
+.btn-xlarge,
+.size-large {
+  padding: var(--space-6) var(--space-10);
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  min-height: 64px;
+  border-radius: var(--radius-xl);
+}
+
+/* Full Width Button */
+.btn-full,
+.size-full {
+  width: 100%;
+}
+
+/* =============================================================================
+   BUTTON STATES & MODIFIERS
+   ============================================================================= */
+
+/* Active State - For navigation buttons */
+.btn.is-active,
+.btn-large.is-active {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: var(--text-inverse);
+  border-color: var(--primary);
+  box-shadow: var(--glass-shadow);
+}
+
+.btn.is-active:hover,
+.btn-large.is-active:hover {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+}
+
+/* Loading State */
+.btn.is-loading,
+.btn-large.is-loading {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+
+.btn.is-loading::after,
+.btn-large.is-loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: btn-loading-spin 0.8s linear infinite;
+}
+
+@keyframes btn-loading-spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* =============================================================================
+   BUTTON ICONS & CONTENT
+   ============================================================================= */
+
+/* Button Icon Styling */
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-large .button-icon {
+  font-size: var(--text-xl); /* Larger icons for large buttons */
+}
+
+.btn-small .button-icon {
+  font-size: var(--text-sm); /* Smaller icons for small buttons */
+}
+
+/* Icon-only buttons */
+.btn-icon-only {
+  padding: var(--space-3);
+  min-width: 44px;
+  aspect-ratio: 1;
+  justify-content: center;
+}
+
+.btn-icon-only.btn-small {
+  padding: var(--space-2);
+  min-width: 36px;
+}
+
+.btn-icon-only.btn-large {
+  padding: var(--space-5);
+  min-width: 56px;
+}
+
+/* =============================================================================
+   SEMANTIC VARIANTS
+   ============================================================================= */
+
+/* Success Variant */
+.variant-success {
+  background: linear-gradient(135deg, var(--success) 0%, var(--success-light) 100%);
+  color: var(--text-inverse);
+  border-color: var(--success);
+}
+
+.variant-success:hover {
+  background: linear-gradient(135deg, var(--success-light) 0%, var(--success) 100%);
+  border-color: var(--success-light);
+}
+
+/* Warning Variant */
+.variant-warning {
+  background: linear-gradient(135deg, var(--warning) 0%, var(--warning-light) 100%);
+  color: var(--text-inverse);
+  border-color: var(--warning);
+}
+
+.variant-warning:hover {
+  background: linear-gradient(135deg, var(--warning-light) 0%, var(--warning) 100%);
+  border-color: var(--warning-light);
+}
+
+/* Info Variant */
+.variant-info {
+  background: linear-gradient(135deg, var(--info) 0%, var(--info-light) 100%);
+  color: var(--text-inverse);
+  border-color: var(--info);
+}
+
+.variant-info:hover {
+  background: linear-gradient(135deg, var(--info-light) 0%, var(--info) 100%);
+  border-color: var(--info-light);
+}
+
+/* =============================================================================
+   NAVIGATION BUTTON STYLES (for Sidebar)
+   ============================================================================= */
+
+/* Navigation link buttons - Sidebar specific overrides */
+#main-navigation .nav-link {
+  /* Reset button styles for sidebar - let sidebar1.css handle the styling */
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: var(--radius-md) !important;
+  padding: var(--space-3) var(--space-4) !important;
+  color: var(--gray-600) !important;
+  font-size: var(--text-sm) !important;
+  transform: none !important;
+}
+
+#main-navigation .nav-link:hover {
+  color: white !important;
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%) !important;
+  transform: translateX(4px) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+#main-navigation .nav-link.is-active {
+  color: white !important;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%) !important;
+  border-left: 4px solid var(--primary-dark) !important;
+  font-weight: var(--font-semibold) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+#main-navigation .nav-link.is-active:hover {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%) !important;
+  box-shadow: var(--shadow-lg) !important;
+  transform: translateX(6px) !important;
+}
+
+/* Navigation icons */
+#main-navigation .nav-icon {
+  font-size: var(--text-lg);
+  opacity: 0.8;
+}
+
+#main-navigation .nav-link.is-active .nav-icon {
+  opacity: 1;
+}
+
+/* Navigation text */
+#main-navigation .nav-text {
+  font-weight: var(--font-medium);
+}
+
+/* =============================================================================
+   SPECIAL BUTTON GROUPS & LAYOUTS
+   ============================================================================= */
+
+/* Button Groups */
+.btn-group {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.btn-group .btn {
+  flex: 1;
+}
+
+.btn-group-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.btn-group-vertical .btn {
+  width: 100%;
+}
+
+/* Actions Grid (used in Dashboard quick actions) */
+.actions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.actions-grid .btn {
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+/* =============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================= */
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .btn-large {
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--text-base);
+    min-height: 48px;
+  }
+  
+  .btn-xlarge {
+    padding: var(--space-5) var(--space-8);
+    font-size: var(--text-lg);
+    min-height: 56px;
+  }
+  
+  .btn-group {
+    flex-direction: column;
+  }
+  
+  .nav-link {
+    padding: var(--space-3) var(--space-4);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .btn {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+    min-height: 40px;
+  }
+  
+  .btn-large {
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--text-base);
+    min-height: 44px;
+  }
+  
+  .button-icon {
+    font-size: var(--text-base);
+  }
+  
+  .btn-large .button-icon {
+    font-size: var(--text-lg);
+  }
+}
+
+/* =============================================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================================================= */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn {
+    border-width: 2px;
+  }
+  
+  .btn-primary,
+  .btn-upload,
+  .btn-danger {
+    border-color: currentColor;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn-large,
+  .base-button {
+    transition: none;
+  }
+  
+  .btn:hover,
+  .btn-large:hover,
+  .base-button:hover {
+    transform: none;
+  }
+  
+  .btn.is-loading::after,
+  .btn-large.is-loading::after {
+    animation: none;
+  }
+}
+
+/* =============================================================================
+   UTILITY CLASSES FOR BUTTONS
+   ============================================================================= */
+
+/* Text alignment utilities for buttons */
+.btn-text-left {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.btn-text-center {
+  text-align: center;
+  justify-content: center;
+}
+
+.btn-text-right {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+/* Border utilities */
+.btn-no-border {
+  border: none;
+}
+
+.btn-dashed {
+  border-style: dashed;
+}
+
+/* Shadow utilities */
+.btn-no-shadow {
+  box-shadow: none;
+}
+
+.btn-shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* =============================================================================
+   COMPONENT INTEGRATION CLASSES
+   ============================================================================= */
+
+/* File upload button specific styling */
+.file-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-6);
+  background: var(--glass-bg-subtle);
+  backdrop-filter: var(--glass-backdrop-sm);
+  border: 2px dashed var(--border-light);
+  border-radius: var(--radius-md);
+  color: var(--gray-600);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.file-label:hover {
+  background: var(--glass-bg);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* Integration with existing patterns */
+.upload-button {
+  /* Extends btn-upload styles */
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: var(--text-inverse);
+  border: 2px solid var(--primary);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-md);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.upload-button:hover {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+  border-color: var(--primary-light);
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.25);
+}

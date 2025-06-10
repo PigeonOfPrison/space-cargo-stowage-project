@@ -52,7 +52,7 @@ export async function searchItems(req, res) {
             return res.status(400).json({ success: false });
         }
 
-        const items = await ItemsModel.searchItems(itemId, itemName, userId);
+        const items = await ItemsModel.searchItems({ itemId, itemName, userId });
         const retrievalSteps = await getRetrievalSteps(itemId);
 
         if (items.length === 0) {
@@ -128,4 +128,51 @@ export async function manualItemPlacement(req, res) {
     }
 }
 
-export default { itemsPlacement, searchItems, retrieveItems, manualItemPlacement };
+export async function getSomeItems(req, res) {
+    try {
+        const { itemNumbers, itemName, itemId } = req.query;
+
+        // Validate that at least one parameter is provided
+        if (!itemNumbers && !itemName && !itemId) {
+            return res.status(400).json({ 
+                success: false,
+                message: 'At least one query parameter is required: itemNumbers, itemName, or itemId'
+            });
+        }
+
+        let items = [];
+
+        // Handle itemNumbers parameter - return starting items from database
+        if (itemNumbers) {
+            const limit = parseInt(itemNumbers);
+            if (isNaN(limit) || limit <= 0) {
+                return res.status(400).json({
+                    success: false,
+                    message: 'itemNumbers must be a positive integer'
+                });
+            }
+
+            items = await ItemsModel.getItemsByNumber(limit);
+        }
+        // Handle itemName or itemId using the searchItems function without limit
+        else if (itemName || itemId) {
+            const searchQuery = { itemId, itemName };
+            items = await ItemsModel.searchItems(searchQuery, false); // false = don't limit to one
+        }
+
+        return res.status(200).json({
+            success: true,
+            items: items,
+            count: items.length
+        });
+
+    } catch (error) {
+        console.error('Error in getSomeItems:', error);
+        return res.status(500).json({ 
+            success: false,
+            message: 'Internal server error'
+        });
+    }
+}
+
+export default { itemsPlacement, searchItems, retrieveItems, manualItemPlacement, getSomeItems };
